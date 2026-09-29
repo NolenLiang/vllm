@@ -1,0 +1,123 @@
+{
+  "group_id": "grpo-530cc5641b9d45a69af54b699cbef520",
+  "group_index": 8,
+  "phase": "measurement",
+  "successful_requests": 8,
+  "errors": [],
+  "requests": [
+    {
+      "request_id": "grpo-530cc5641b9d45a69af54b699cbef520-0",
+      "decode_ttft_s": 0.06932025612331927,
+      "end_to_end_ttft_s": 0.14888960518874228,
+      "decode_elapsed_s": 0.805502005154267,
+      "usage": {
+        "prompt_tokens": 4097,
+        "total_tokens": 4129,
+        "completion_tokens": 32
+      },
+      "text": " Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss"
+    },
+    {
+      "request_id": "grpo-530cc5641b9d45a69af54b699cbef520-1",
+      "decode_ttft_s": 0.12216255301609635,
+      "end_to_end_ttft_s": 0.2018387820571661,
+      "decode_elapsed_s": 0.8306474569253623,
+      "usage": {
+        "prompt_tokens": 4097,
+        "total_tokens": 4129,
+        "completion_tokens": 32
+      },
+      "text": " Discuss the evidence carefully. Discuss the evidence carefully. Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss"
+    },
+    {
+      "request_id": "grpo-530cc5641b9d45a69af54b699cbef520-2",
+      "decode_ttft_s": 0.12158981710672379,
+      "end_to_end_ttft_s": 0.2013158060144633,
+      "decode_elapsed_s": 0.8297557451296598,
+      "usage": {
+        "prompt_tokens": 4097,
+        "total_tokens": 4129,
+        "completion_tokens": 32
+      },
+      "text": "  Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss"
+    },
+    {
+      "request_id": "grpo-530cc5641b9d45a69af54b699cbef520-3",
+      "decode_ttft_s": 0.12128549697808921,
+      "end_to_end_ttft_s": 0.2010694700293243,
+      "decode_elapsed_s": 0.8296388809103519,
+      "usage": {
+        "prompt_tokens": 4097,
+        "total_tokens": 4129,
+        "completion_tokens": 32
+      },
+      "text": " Discuss the evidence carefully. Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss"
+    },
+    {
+      "request_id": "grpo-530cc5641b9d45a69af54b699cbef520-4",
+      "decode_ttft_s": 0.1207276398781687,
+      "end_to_end_ttft_s": 0.20055737299844623,
+      "decode_elapsed_s": 0.8284871040377766,
+      "usage": {
+        "prompt_tokens": 4097,
+        "total_tokens": 4129,
+        "completion_tokens": 32
+      },
+      "text": " Discuss the evidence carefully. Discuss the evidence carefully. Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss"
+    },
+    {
+      "request_id": "grpo-530cc5641b9d45a69af54b699cbef520-5",
+      "decode_ttft_s": 0.1207323120906949,
+      "end_to_end_ttft_s": 0.20060847699642181,
+      "decode_elapsed_s": 0.8291337601840496,
+      "usage": {
+        "prompt_tokens": 4097,
+        "total_tokens": 4129,
+        "completion_tokens": 32
+      },
+      "text": " Discuss the evidence carefully. Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss"
+    },
+    {
+      "request_id": "grpo-530cc5641b9d45a69af54b699cbef520-6",
+      "decode_ttft_s": 0.12019036011770368,
+      "end_to_end_ttft_s": 0.2000994209665805,
+      "decode_elapsed_s": 0.8283238080330193,
+      "usage": {
+        "prompt_tokens": 4097,
+        "total_tokens": 4129,
+        "completion_tokens": 32
+      },
+      "text": " Discuss the evidence carefully. Discuss the evidence carefully. Discuss the evidence carefully. Discuss the evidence carefully. Discuss the evidence carefully.  Discuss"
+    },
+    {
+      "request_id": "grpo-530cc5641b9d45a69af54b699cbef520-7",
+      "decode_ttft_s": 0.12002476002089679,
+      "end_to_end_ttft_s": 0.19998748507350683,
+      "decode_elapsed_s": 0.8284037760458887,
+      "usage": {
+        "prompt_tokens": 4097,
+        "total_tokens": 4129,
+        "completion_tokens": 32
+      },
+      "text": "  Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss"
+    }
+  ],
+  "decode_metrics_delta": {
+    "vllm:nixl_bytes_transferred_count": 8.0,
+    "vllm:nixl_bytes_transferred_sum": 1056964608.0,
+    "vllm:nixl_num_failed_transfers_total": 0.0,
+    "vllm:nixl_num_kv_expired_reqs_total": 0.0
+  },
+  "prefill_metrics_delta": {
+    "vllm:nixl_bytes_transferred_count": 0.0,
+    "vllm:nixl_bytes_transferred_sum": 0.0,
+    "vllm:nixl_num_failed_transfers_total": 0.0,
+    "vllm:nixl_num_kv_expired_reqs_total": 0.0
+  },
+  "worker_transfers": 8.0,
+  "payload_bytes": 1056964608.0,
+  "decode_ttft_median_s": 0.1207299759844318,
+  "duplicate_transfers": null,
+  "unique_destination_gpu_blocks": null,
+  "trace_note": "Use per-rank READ traces for block/duplicate attribution; telemetry counts alone do not prove duplicate prefixes."
+}

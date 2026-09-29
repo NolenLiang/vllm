@@ -1,0 +1,32 @@
+{
+  "source": "<WORKSPACE>/.research-cache/miles-sglang-vllm/worktrees/nixl-baseline",
+  "source_sha": "0af34418e99b972029b53130c9a9665b4e692536",
+  "source_dirty": false,
+  "model": "<USER_PROJECTS>/hf_model_cache/hub/models--Qwen--Qwen3-0.6B/snapshots/c1899de289a04d12100db370d81485cdf75e47ca",
+  "trace": false,
+  "measurement_groups_per_case": 10,
+  "warmup_groups_per_case": 2,
+  "prefill_mode": "parallel",
+  "kv_extra": {},
+  "attention_config": {
+    "backend": "FLASH_ATTN",
+    "flash_attn_version": 2
+  },
+  "flashinfer_sampler": false,
+  "python": "<WORKSPACE>/research/miles-sglang-vllm/implementation/environment/.venv/bin/python",
+  "slurm_job_id": "7531249",
+  "ports": {
+    "api": [
+      33411,
+      40977
+    ],
+    "nixl_side_channel": [
+      54643,
+      26891
+    ],
+    "internal": [
+      9899,
+      33263
+    ]
+  }
+}

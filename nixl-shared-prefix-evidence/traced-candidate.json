@@ -1,0 +1,103 @@
+{
+  "job": 7529450,
+  "probe_exit": 0,
+  "source_patches_identical": true,
+  "rows": [
+    {
+      "shared": "false",
+      "case": "tokens-4096-n-1",
+      "successful_requests": 1,
+      "transfers": 1.0,
+      "payload_mib": 448.0,
+      "decode_ttft_ms": 154.36873806174845,
+      "unique_destination_gpu_blocks": 32,
+      "peak_live_request_gpu_blocks": 33,
+      "redundant_source_block_reads": 0,
+      "duplicate_full_read_plans": 0
+    },
+    {
+      "shared": "false",
+      "case": "tokens-4096-n-4",
+      "successful_requests": 4,
+      "transfers": 4.0,
+      "payload_mib": 1792.0,
+      "decode_ttft_ms": 105.19385145744309,
+      "unique_destination_gpu_blocks": 128,
+      "peak_live_request_gpu_blocks": 132,
+      "redundant_source_block_reads": 93,
+      "duplicate_full_read_plans": 0
+    },
+    {
+      "shared": "false",
+      "case": "tokens-4097-n-1",
+      "successful_requests": 1,
+      "transfers": 1.0,
+      "payload_mib": 462.0,
+      "decode_ttft_ms": 59.960651909932494,
+      "unique_destination_gpu_blocks": 33,
+      "peak_live_request_gpu_blocks": 33,
+      "redundant_source_block_reads": 0,
+      "duplicate_full_read_plans": 0
+    },
+    {
+      "shared": "false",
+      "case": "tokens-4097-n-4",
+      "successful_requests": 4,
+      "transfers": 4.0,
+      "payload_mib": 1848.0,
+      "decode_ttft_ms": 91.7855185107328,
+      "unique_destination_gpu_blocks": 132,
+      "peak_live_request_gpu_blocks": 132,
+      "redundant_source_block_reads": 96,
+      "duplicate_full_read_plans": 0
+    },
+    {
+      "shared": "true",
+      "case": "tokens-4096-n-1",
+      "successful_requests": 1,
+      "transfers": 1.0,
+      "payload_mib": 448.0,
+      "decode_ttft_ms": 153.51876197382808,
+      "unique_destination_gpu_blocks": 32,
+      "peak_live_request_gpu_blocks": 33,
+      "redundant_source_block_reads": 0,
+      "duplicate_full_read_plans": 0
+    },
+    {
+      "shared": "true",
+      "case": "tokens-4096-n-4",
+      "successful_requests": 4,
+      "transfers": 1.0,
+      "payload_mib": 448.0,
+      "decode_ttft_ms": 80.45405900338665,
+      "unique_destination_gpu_blocks": 32,
+      "peak_live_request_gpu_blocks": 39,
+      "redundant_source_block_reads": 0,
+      "duplicate_full_read_plans": 0
+    },
+    {
+      "shared": "true",
+      "case": "tokens-4097-n-1",
+      "successful_requests": 1,
+      "transfers": 1.0,
+      "payload_mib": 462.0,
+      "decode_ttft_ms": 61.14262295886874,
+      "unique_destination_gpu_blocks": 33,
+      "peak_live_request_gpu_blocks": 33,
+      "redundant_source_block_reads": 0,
+      "duplicate_full_read_plans": 0
+    },
+    {
+      "shared": "true",
+      "case": "tokens-4097-n-4",
+      "successful_requests": 4,
+      "transfers": 1.0,
+      "payload_mib": 462.0,
+      "decode_ttft_ms": 72.01710651861504,
+      "unique_destination_gpu_blocks": 33,
+      "peak_live_request_gpu_blocks": 36,
+      "redundant_source_block_reads": 0,
+      "duplicate_full_read_plans": 0
+    }
+  ]
+}

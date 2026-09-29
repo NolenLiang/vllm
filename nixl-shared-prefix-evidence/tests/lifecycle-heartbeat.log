@@ -1,0 +1,16 @@
+NIXL pytest runner started: <WORKSPACE>/research/miles-sglang-vllm/implementation/environment/.venv/bin/python
+pytest imported; starting collection
+........................................................................ [ 82%]
+...............                                                          [100%]
+=============================== warnings summary ===============================
+.research-cache/miles-sglang-vllm/worktrees/nixl-shared-prefix/vllm/__init__.py:7
+  <WORKSPACE>/.research-cache/miles-sglang-vllm/worktrees/nixl-shared-prefix/vllm/__init__.py:7: RuntimeWarning: Failed to read commit hash:
+  No module named 'vllm._version'
+    from .version import __version__, __version_tuple__  # isort:skip
+
+../vllm-review/.venv-vllm/lib/python3.12/site-packages/torch/jit/_script.py:365: 14 warnings
+  <USER_PROJECTS>/vllm-review/.venv-vllm/lib/python3.12/site-packages/torch/jit/_script.py:365: DeprecationWarning: `torch.jit.script_method` is deprecated. Please switch to `torch.compile` or `torch.export`.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+87 passed, 15 warnings in 21.39s

@@ -1,0 +1,2075 @@
+{
+  "passed": true,
+  "configuration": {
+    "prefill": "http://127.0.0.1:33411",
+    "decode": "http://127.0.0.1:40977",
+    "model": "rl-probe",
+    "prefix_tokens": 4097,
+    "siblings": 8,
+    "logprob_atol": 0.01,
+    "output": "<WORKSPACE>/research/miles-sglang-vllm/implementation/environment/results/7531249/baseline-untraced/correctness-4097.json"
+  },
+  "reference": {
+    "id": "cmpl-validation-0d97dae62731486db5e80972e263a483-reference",
+    "object": "text_completion",
+    "created": 1790657527,
+    "model": "rl-probe",
+    "choices": [
+      {
+        "index": 0,
+        "text": " this mathematical argument. Explain this mathematical argument. Explain this mathematical",
+        "logprobs": {
+          "text_offset": [
+            0,
+            5,
+            18,
+            27,
+            28,
+            29,
+            31,
+            36,
+            41,
+            54,
+            63,
+            64,
+            65,
+            67,
+            72,
+            77
+          ],
+          "token_logprobs": [
+            -6.294052582234144e-05,
+            -8.320462075062096e-05,
+            -0.00012635385792236775,
+            -0.0002817710628733039,
+            -0.00010442188795423135,
+            -0.02879936620593071,
+            -0.00021324267436284572,
+            -6.925819616299123e-05,
+            -8.95221673999913e-05,
+            -0.000125281119835563,
+            -0.0003134713042527437,
+            -0.00010871296399272978,
+            -0.032541267573833466,
+            -0.00016485285595990717,
+            -6.472854875028133e-05,
+            -8.129743218887597e-05
+          ],
+          "tokens": [
+            " this",
+            " mathematical",
+            " argument",
+            ".",
+            " ",
+            "Ex",
+            "plain",
+            " this",
+            " mathematical",
+            " argument",
+            ".",
+            " ",
+            "Ex",
+            "plain",
+            " this",
+            " mathematical"
+          ],
+          "top_logprobs": [
+            {
+              " this": -6.294052582234144e-05
+            },
+            {
+              " mathematical": -8.320462075062096e-05
+            },
+            {
+              " argument": -0.00012635385792236775
+            },
+            {
+              ".": -0.0002817710628733039
+            },
+            {
+              " ": -0.00010442188795423135
+            },
+            {
+              "Ex": -0.02879936620593071
+            },
+            {
+              "plain": -0.00021324267436284572
+            },
+            {
+              " this": -6.925819616299123e-05
+            },
+            {
+              " mathematical": -8.95221673999913e-05
+            },
+            {
+              " argument": -0.000125281119835563
+            },
+            {
+              ".": -0.0003134713042527437
+            },
+            {
+              " ": -0.00010871296399272978
+            },
+            {
+              "Ex": -0.032541267573833466
+            },
+            {
+              "plain": -0.00016485285595990717
+            },
+            {
+              " this": -6.472854875028133e-05
+            },
+            {
+              " mathematical": -8.129743218887597e-05
+            }
+          ]
+        },
+        "finish_reason": "length",
+        "stop_reason": null,
+        "token_ids": null,
+        "prompt_logprobs": null,
+        "prompt_token_ids": null,
+        "routed_experts": null
+      }
+    ],
+    "service_tier": null,
+    "system_fingerprint": "vllm-0.1.dev202+g0af34418e-b29887e1",
+    "usage": {
+      "prompt_tokens": 4097,
+      "total_tokens": 4113,
+      "completion_tokens": 16,
+      "prompt_tokens_details": null,
+      "completion_tokens_details": null
+    },
+    "kv_transfer_params": null,
+    "ec_transfer_params": null,
+    "metrics": null
+  },
+  "producer_responses": [
+    {
+      "id": "cmpl-validation-0d97dae62731486db5e80972e263a483-0",
+      "object": "text_completion",
+      "created": 1790657527,
+      "model": "rl-probe",
+      "choices": [
+        {
+          "index": 0,
+          "text": " this",
+          "logprobs": {
+            "text_offset": [
+              0
+            ],
+            "token_logprobs": [
+              -6.294052582234144e-05
+            ],
+            "tokens": [
+              " this"
+            ],
+            "top_logprobs": [
+              {
+                " this": -6.294052582234144e-05
+              }
+            ]
+          },
+          "finish_reason": "length",
+          "stop_reason": null,
+          "token_ids": null,
+          "prompt_logprobs": null,
+          "prompt_token_ids": null,
+          "routed_experts": null
+        }
+      ],
+      "service_tier": null,
+      "system_fingerprint": "vllm-0.1.dev202+g0af34418e-b29887e1",
+      "usage": {
+        "prompt_tokens": 4097,
+        "total_tokens": 4098,
+        "completion_tokens": 1,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "kv_transfer_params": {
+        "do_remote_prefill": true,
+        "do_remote_decode": false,
+        "remote_block_ids": [
+          [
+            1376,
+            1377,
+            1378,
+            1379,
+            1380,
+            1381,
+            1382,
+            1383,
+            1384,
+            1385,
+            1386,
+            1387,
+            1388,
+            1389,
+            1390,
+            1391,
+            1392,
+            1393,
+            1394,
+            1395,
+            1396,
+            1397,
+            1398,
+            1399,
+            1400,
+            1401,
+            1402,
+            1403,
+            1404,
+            1405,
+            1406,
+            1407,
+            1408
+          ]
+        ],
+        "remote_engine_id": "e63beac8-9f8f-44f9-850a-316b1543ba77",
+        "remote_request_id": "cmpl-validation-0d97dae62731486db5e80972e263a483-0-0-950282ce",
+        "remote_host": "localhost",
+        "remote_port": 54643,
+        "tp_size": 1,
+        "dcp_size": 1,
+        "pp_size": 1,
+        "remote_num_tokens": 4097,
+        "remote_blocks_expiry_time": null,
+        "transfer_mode": "pull",
+        "remote_prefill_cached_tokens": 0
+      },
+      "ec_transfer_params": null,
+      "metrics": null
+    },
+    {
+      "id": "cmpl-validation-0d97dae62731486db5e80972e263a483-1",
+      "object": "text_completion",
+      "created": 1790657527,
+      "model": "rl-probe",
+      "choices": [
+        {
+          "index": 0,
+          "text": " this",
+          "logprobs": {
+            "text_offset": [
+              0
+            ],
+            "token_logprobs": [
+              -6.48477507638745e-05
+            ],
+            "tokens": [
+              " this"
+            ],
+            "top_logprobs": [
+              {
+                " this": -6.48477507638745e-05
+              }
+            ]
+          },
+          "finish_reason": "length",
+          "stop_reason": null,
+          "token_ids": null,
+          "prompt_logprobs": null,
+          "prompt_token_ids": null,
+          "routed_experts": null
+        }
+      ],
+      "service_tier": null,
+      "system_fingerprint": "vllm-0.1.dev202+g0af34418e-b29887e1",
+      "usage": {
+        "prompt_tokens": 4097,
+        "total_tokens": 4098,
+        "completion_tokens": 1,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "kv_transfer_params": {
+        "do_remote_prefill": true,
+        "do_remote_decode": false,
+        "remote_block_ids": [
+          [
+            1376,
+            1377,
+            1378,
+            1379,
+            1380,
+            1381,
+            1382,
+            1383,
+            1384,
+            1385,
+            1386,
+            1387,
+            1388,
+            1389,
+            1390,
+            1391,
+            1392,
+            1393,
+            1394,
+            1395,
+            1396,
+            1397,
+            1398,
+            1399,
+            1400,
+            1401,
+            1402,
+            1403,
+            1404,
+            1405,
+            1406,
+            1407,
+            1409
+          ]
+        ],
+        "remote_engine_id": "e63beac8-9f8f-44f9-850a-316b1543ba77",
+        "remote_request_id": "cmpl-validation-0d97dae62731486db5e80972e263a483-1-0-94ad39e2",
+        "remote_host": "localhost",
+        "remote_port": 54643,
+        "tp_size": 1,
+        "dcp_size": 1,
+        "pp_size": 1,
+        "remote_num_tokens": 4097,
+        "remote_blocks_expiry_time": null,
+        "transfer_mode": "pull",
+        "remote_prefill_cached_tokens": 4096
+      },
+      "ec_transfer_params": null,
+      "metrics": null
+    },
+    {
+      "id": "cmpl-validation-0d97dae62731486db5e80972e263a483-2",
+      "object": "text_completion",
+      "created": 1790657527,
+      "model": "rl-probe",
+      "choices": [
+        {
+          "index": 0,
+          "text": " this",
+          "logprobs": {
+            "text_offset": [
+              0
+            ],
+            "token_logprobs": [
+              -6.48477507638745e-05
+            ],
+            "tokens": [
+              " this"
+            ],
+            "top_logprobs": [
+              {
+                " this": -6.48477507638745e-05
+              }
+            ]
+          },
+          "finish_reason": "length",
+          "stop_reason": null,
+          "token_ids": null,
+          "prompt_logprobs": null,
+          "prompt_token_ids": null,
+          "routed_experts": null
+        }
+      ],
+      "service_tier": null,
+      "system_fingerprint": "vllm-0.1.dev202+g0af34418e-b29887e1",
+      "usage": {
+        "prompt_tokens": 4097,
+        "total_tokens": 4098,
+        "completion_tokens": 1,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "kv_transfer_params": {
+        "do_remote_prefill": true,
+        "do_remote_decode": false,
+        "remote_block_ids": [
+          [
+            1376,
+            1377,
+            1378,
+            1379,
+            1380,
+            1381,
+            1382,
+            1383,
+            1384,
+            1385,
+            1386,
+            1387,
+            1388,
+            1389,
+            1390,
+            1391,
+            1392,
+            1393,
+            1394,
+            1395,
+            1396,
+            1397,
+            1398,
+            1399,
+            1400,
+            1401,
+            1402,
+            1403,
+            1404,
+            1405,
+            1406,
+            1407,
+            1410
+          ]
+        ],
+        "remote_engine_id": "e63beac8-9f8f-44f9-850a-316b1543ba77",
+        "remote_request_id": "cmpl-validation-0d97dae62731486db5e80972e263a483-2-0-8db537b3",
+        "remote_host": "localhost",
+        "remote_port": 54643,
+        "tp_size": 1,
+        "dcp_size": 1,
+        "pp_size": 1,
+        "remote_num_tokens": 4097,
+        "remote_blocks_expiry_time": null,
+        "transfer_mode": "pull",
+        "remote_prefill_cached_tokens": 4096
+      },
+      "ec_transfer_params": null,
+      "metrics": null
+    },
+    {
+      "id": "cmpl-validation-0d97dae62731486db5e80972e263a483-3",
+      "object": "text_completion",
+      "created": 1790657527,
+      "model": "rl-probe",
+      "choices": [
+        {
+          "index": 0,
+          "text": " this",
+          "logprobs": {
+            "text_offset": [
+              0
+            ],
+            "token_logprobs": [
+              -6.48477507638745e-05
+            ],
+            "tokens": [
+              " this"
+            ],
+            "top_logprobs": [
+              {
+                " this": -6.48477507638745e-05
+              }
+            ]
+          },
+          "finish_reason": "length",
+          "stop_reason": null,
+          "token_ids": null,
+          "prompt_logprobs": null,
+          "prompt_token_ids": null,
+          "routed_experts": null
+        }
+      ],
+      "service_tier": null,
+      "system_fingerprint": "vllm-0.1.dev202+g0af34418e-b29887e1",
+      "usage": {
+        "prompt_tokens": 4097,
+        "total_tokens": 4098,
+        "completion_tokens": 1,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "kv_transfer_params": {
+        "do_remote_prefill": true,
+        "do_remote_decode": false,
+        "remote_block_ids": [
+          [
+            1376,
+            1377,
+            1378,
+            1379,
+            1380,
+            1381,
+            1382,
+            1383,
+            1384,
+            1385,
+            1386,
+            1387,
+            1388,
+            1389,
+            1390,
+            1391,
+            1392,
+            1393,
+            1394,
+            1395,
+            1396,
+            1397,
+            1398,
+            1399,
+            1400,
+            1401,
+            1402,
+            1403,
+            1404,
+            1405,
+            1406,
+            1407,
+            1411
+          ]
+        ],
+        "remote_engine_id": "e63beac8-9f8f-44f9-850a-316b1543ba77",
+        "remote_request_id": "cmpl-validation-0d97dae62731486db5e80972e263a483-3-0-801093e1",
+        "remote_host": "localhost",
+        "remote_port": 54643,
+        "tp_size": 1,
+        "dcp_size": 1,
+        "pp_size": 1,
+        "remote_num_tokens": 4097,
+        "remote_blocks_expiry_time": null,
+        "transfer_mode": "pull",
+        "remote_prefill_cached_tokens": 4096
+      },
+      "ec_transfer_params": null,
+      "metrics": null
+    },
+    {
+      "id": "cmpl-validation-0d97dae62731486db5e80972e263a483-4",
+      "object": "text_completion",
+      "created": 1790657527,
+      "model": "rl-probe",
+      "choices": [
+        {
+          "index": 0,
+          "text": " this",
+          "logprobs": {
+            "text_offset": [
+              0
+            ],
+            "token_logprobs": [
+              -6.48477507638745e-05
+            ],
+            "tokens": [
+              " this"
+            ],
+            "top_logprobs": [
+              {
+                " this": -6.48477507638745e-05
+              }
+            ]
+          },
+          "finish_reason": "length",
+          "stop_reason": null,
+          "token_ids": null,
+          "prompt_logprobs": null,
+          "prompt_token_ids": null,
+          "routed_experts": null
+        }
+      ],
+      "service_tier": null,
+      "system_fingerprint": "vllm-0.1.dev202+g0af34418e-b29887e1",
+      "usage": {
+        "prompt_tokens": 4097,
+        "total_tokens": 4098,
+        "completion_tokens": 1,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "kv_transfer_params": {
+        "do_remote_prefill": true,
+        "do_remote_decode": false,
+        "remote_block_ids": [
+          [
+            1376,
+            1377,
+            1378,
+            1379,
+            1380,
+            1381,
+            1382,
+            1383,
+            1384,
+            1385,
+            1386,
+            1387,
+            1388,
+            1389,
+            1390,
+            1391,
+            1392,
+            1393,
+            1394,
+            1395,
+            1396,
+            1397,
+            1398,
+            1399,
+            1400,
+            1401,
+            1402,
+            1403,
+            1404,
+            1405,
+            1406,
+            1407,
+            1412
+          ]
+        ],
+        "remote_engine_id": "e63beac8-9f8f-44f9-850a-316b1543ba77",
+        "remote_request_id": "cmpl-validation-0d97dae62731486db5e80972e263a483-4-0-88a5198f",
+        "remote_host": "localhost",
+        "remote_port": 54643,
+        "tp_size": 1,
+        "dcp_size": 1,
+        "pp_size": 1,
+        "remote_num_tokens": 4097,
+        "remote_blocks_expiry_time": null,
+        "transfer_mode": "pull",
+        "remote_prefill_cached_tokens": 4096
+      },
+      "ec_transfer_params": null,
+      "metrics": null
+    },
+    {
+      "id": "cmpl-validation-0d97dae62731486db5e80972e263a483-5",
+      "object": "text_completion",
+      "created": 1790657527,
+      "model": "rl-probe",
+      "choices": [
+        {
+          "index": 0,
+          "text": " this",
+          "logprobs": {
+            "text_offset": [
+              0
+            ],
+            "token_logprobs": [
+              -6.48477507638745e-05
+            ],
+            "tokens": [
+              " this"
+            ],
+            "top_logprobs": [
+              {
+                " this": -6.48477507638745e-05
+              }
+            ]
+          },
+          "finish_reason": "length",
+          "stop_reason": null,
+          "token_ids": null,
+          "prompt_logprobs": null,
+          "prompt_token_ids": null,
+          "routed_experts": null
+        }
+      ],
+      "service_tier": null,
+      "system_fingerprint": "vllm-0.1.dev202+g0af34418e-b29887e1",
+      "usage": {
+        "prompt_tokens": 4097,
+        "total_tokens": 4098,
+        "completion_tokens": 1,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "kv_transfer_params": {
+        "do_remote_prefill": true,
+        "do_remote_decode": false,
+        "remote_block_ids": [
+          [
+            1376,
+            1377,
+            1378,
+            1379,
+            1380,
+            1381,
+            1382,
+            1383,
+            1384,
+            1385,
+            1386,
+            1387,
+            1388,
+            1389,
+            1390,
+            1391,
+            1392,
+            1393,
+            1394,
+            1395,
+            1396,
+            1397,
+            1398,
+            1399,
+            1400,
+            1401,
+            1402,
+            1403,
+            1404,
+            1405,
+            1406,
+            1407,
+            1413
+          ]
+        ],
+        "remote_engine_id": "e63beac8-9f8f-44f9-850a-316b1543ba77",
+        "remote_request_id": "cmpl-validation-0d97dae62731486db5e80972e263a483-5-0-83c3b9c1",
+        "remote_host": "localhost",
+        "remote_port": 54643,
+        "tp_size": 1,
+        "dcp_size": 1,
+        "pp_size": 1,
+        "remote_num_tokens": 4097,
+        "remote_blocks_expiry_time": null,
+        "transfer_mode": "pull",
+        "remote_prefill_cached_tokens": 4096
+      },
+      "ec_transfer_params": null,
+      "metrics": null
+    },
+    {
+      "id": "cmpl-validation-0d97dae62731486db5e80972e263a483-6",
+      "object": "text_completion",
+      "created": 1790657527,
+      "model": "rl-probe",
+      "choices": [
+        {
+          "index": 0,
+          "text": " this",
+          "logprobs": {
+            "text_offset": [
+              0
+            ],
+            "token_logprobs": [
+              -6.48477507638745e-05
+            ],
+            "tokens": [
+              " this"
+            ],
+            "top_logprobs": [
+              {
+                " this": -6.48477507638745e-05
+              }
+            ]
+          },
+          "finish_reason": "length",
+          "stop_reason": null,
+          "token_ids": null,
+          "prompt_logprobs": null,
+          "prompt_token_ids": null,
+          "routed_experts": null
+        }
+      ],
+      "service_tier": null,
+      "system_fingerprint": "vllm-0.1.dev202+g0af34418e-b29887e1",
+      "usage": {
+        "prompt_tokens": 4097,
+        "total_tokens": 4098,
+        "completion_tokens": 1,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "kv_transfer_params": {
+        "do_remote_prefill": true,
+        "do_remote_decode": false,
+        "remote_block_ids": [
+          [
+            1376,
+            1377,
+            1378,
+            1379,
+            1380,
+            1381,
+            1382,
+            1383,
+            1384,
+            1385,
+            1386,
+            1387,
+            1388,
+            1389,
+            1390,
+            1391,
+            1392,
+            1393,
+            1394,
+            1395,
+            1396,
+            1397,
+            1398,
+            1399,
+            1400,
+            1401,
+            1402,
+            1403,
+            1404,
+            1405,
+            1406,
+            1407,
+            1414
+          ]
+        ],
+        "remote_engine_id": "e63beac8-9f8f-44f9-850a-316b1543ba77",
+        "remote_request_id": "cmpl-validation-0d97dae62731486db5e80972e263a483-6-0-828242f6",
+        "remote_host": "localhost",
+        "remote_port": 54643,
+        "tp_size": 1,
+        "dcp_size": 1,
+        "pp_size": 1,
+        "remote_num_tokens": 4097,
+        "remote_blocks_expiry_time": null,
+        "transfer_mode": "pull",
+        "remote_prefill_cached_tokens": 4096
+      },
+      "ec_transfer_params": null,
+      "metrics": null
+    },
+    {
+      "id": "cmpl-validation-0d97dae62731486db5e80972e263a483-7",
+      "object": "text_completion",
+      "created": 1790657527,
+      "model": "rl-probe",
+      "choices": [
+        {
+          "index": 0,
+          "text": " this",
+          "logprobs": {
+            "text_offset": [
+              0
+            ],
+            "token_logprobs": [
+              -6.48477507638745e-05
+            ],
+            "tokens": [
+              " this"
+            ],
+            "top_logprobs": [
+              {
+                " this": -6.48477507638745e-05
+              }
+            ]
+          },
+          "finish_reason": "length",
+          "stop_reason": null,
+          "token_ids": null,
+          "prompt_logprobs": null,
+          "prompt_token_ids": null,
+          "routed_experts": null
+        }
+      ],
+      "service_tier": null,
+      "system_fingerprint": "vllm-0.1.dev202+g0af34418e-b29887e1",
+      "usage": {
+        "prompt_tokens": 4097,
+        "total_tokens": 4098,
+        "completion_tokens": 1,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "kv_transfer_params": {
+        "do_remote_prefill": true,
+        "do_remote_decode": false,
+        "remote_block_ids": [
+          [
+            1376,
+            1377,
+            1378,
+            1379,
+            1380,
+            1381,
+            1382,
+            1383,
+            1384,
+            1385,
+            1386,
+            1387,
+            1388,
+            1389,
+            1390,
+            1391,
+            1392,
+            1393,
+            1394,
+            1395,
+            1396,
+            1397,
+            1398,
+            1399,
+            1400,
+            1401,
+            1402,
+            1403,
+            1404,
+            1405,
+            1406,
+            1407,
+            1415
+          ]
+        ],
+        "remote_engine_id": "e63beac8-9f8f-44f9-850a-316b1543ba77",
+        "remote_request_id": "cmpl-validation-0d97dae62731486db5e80972e263a483-7-0-a42848f3",
+        "remote_host": "localhost",
+        "remote_port": 54643,
+        "tp_size": 1,
+        "dcp_size": 1,
+        "pp_size": 1,
+        "remote_num_tokens": 4097,
+        "remote_blocks_expiry_time": null,
+        "transfer_mode": "pull",
+        "remote_prefill_cached_tokens": 4096
+      },
+      "ec_transfer_params": null,
+      "metrics": null
+    }
+  ],
+  "outputs": [
+    {
+      "id": "cmpl-validation-0d97dae62731486db5e80972e263a483-0",
+      "object": "text_completion",
+      "created": 1790657527,
+      "model": "rl-probe",
+      "choices": [
+        {
+          "index": 0,
+          "text": " this mathematical argument. Explain this mathematical argument. Explain this mathematical",
+          "logprobs": {
+            "text_offset": [
+              0,
+              5,
+              18,
+              27,
+              28,
+              29,
+              31,
+              36,
+              41,
+              54,
+              63,
+              64,
+              65,
+              67,
+              72,
+              77
+            ],
+            "token_logprobs": [
+              -6.41325386823155e-05,
+              -9.095255518332124e-05,
+              -0.00013326710904948413,
+              -0.00027223696815781295,
+              -0.00010287232726113871,
+              -0.028853686526417732,
+              -0.0001646144810365513,
+              -6.90197994117625e-05,
+              -8.654219709569588e-05,
+              -0.00011252723925281316,
+              -0.0002932118659373373,
+              -0.00010644822759786621,
+              -0.03279383108019829,
+              -0.00016437610611319542,
+              -7.021180499577895e-05,
+              -8.129743218887597e-05
+            ],
+            "tokens": [
+              " this",
+              " mathematical",
+              " argument",
+              ".",
+              " ",
+              "Ex",
+              "plain",
+              " this",
+              " mathematical",
+              " argument",
+              ".",
+              " ",
+              "Ex",
+              "plain",
+              " this",
+              " mathematical"
+            ],
+            "top_logprobs": [
+              {
+                " this": -6.41325386823155e-05
+              },
+              {
+                " mathematical": -9.095255518332124e-05
+              },
+              {
+                " argument": -0.00013326710904948413
+              },
+              {
+                ".": -0.00027223696815781295
+              },
+              {
+                " ": -0.00010287232726113871
+              },
+              {
+                "Ex": -0.028853686526417732
+              },
+              {
+                "plain": -0.0001646144810365513
+              },
+              {
+                " this": -6.90197994117625e-05
+              },
+              {
+                " mathematical": -8.654219709569588e-05
+              },
+              {
+                " argument": -0.00011252723925281316
+              },
+              {
+                ".": -0.0002932118659373373
+              },
+              {
+                " ": -0.00010644822759786621
+              },
+              {
+                "Ex": -0.03279383108019829
+              },
+              {
+                "plain": -0.00016437610611319542
+              },
+              {
+                " this": -7.021180499577895e-05
+              },
+              {
+                " mathematical": -8.129743218887597e-05
+              }
+            ]
+          },
+          "finish_reason": "length",
+          "stop_reason": null,
+          "token_ids": null,
+          "prompt_logprobs": null,
+          "prompt_token_ids": null,
+          "routed_experts": null
+        }
+      ],
+      "service_tier": null,
+      "system_fingerprint": "vllm-0.1.dev202+g0af34418e-b29887e1",
+      "usage": {
+        "prompt_tokens": 4097,
+        "total_tokens": 4113,
+        "completion_tokens": 16,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "kv_transfer_params": null,
+      "ec_transfer_params": null,
+      "metrics": null
+    },
+    {
+      "id": "cmpl-validation-0d97dae62731486db5e80972e263a483-1",
+      "object": "text_completion",
+      "created": 1790657527,
+      "model": "rl-probe",
+      "choices": [
+        {
+          "index": 0,
+          "text": " this mathematical argument. Explain this mathematical argument. Explain this mathematical",
+          "logprobs": {
+            "text_offset": [
+              0,
+              5,
+              18,
+              27,
+              28,
+              29,
+              31,
+              36,
+              41,
+              54,
+              63,
+              64,
+              65,
+              67,
+              72,
+              77
+            ],
+            "token_logprobs": [
+              -6.615896563744172e-05,
+              -8.451581379631534e-05,
+              -0.0001399419124936685,
+              -0.0003082277253270149,
+              -0.00011336160969221964,
+              -0.03276556357741356,
+              -0.00014590153296012431,
+              -6.472854875028133e-05,
+              -8.225102646974847e-05,
+              -0.000120751719805412,
+              -0.0003104920033365488,
+              -9.655486064730212e-05,
+              -0.03243706375360489,
+              -0.00016378014697693288,
+              -7.033100700937212e-05,
+              -7.712543447269127e-05
+            ],
+            "tokens": [
+              " this",
+              " mathematical",
+              " argument",
+              ".",
+              " ",
+              "Ex",
+              "plain",
+              " this",
+              " mathematical",
+              " argument",
+              ".",
+              " ",
+              "Ex",
+              "plain",
+              " this",
+              " mathematical"
+            ],
+            "top_logprobs": [
+              {
+                " this": -6.615896563744172e-05
+              },
+              {
+                " mathematical": -8.451581379631534e-05
+              },
+              {
+                " argument": -0.0001399419124936685
+              },
+              {
+                ".": -0.0003082277253270149
+              },
+              {
+                " ": -0.00011336160969221964
+              },
+              {
+                "Ex": -0.03276556357741356
+              },
+              {
+                "plain": -0.00014590153296012431
+              },
+              {
+                " this": -6.472854875028133e-05
+              },
+              {
+                " mathematical": -8.225102646974847e-05
+              },
+              {
+                " argument": -0.000120751719805412
+              },
+              {
+                ".": -0.0003104920033365488
+              },
+              {
+                " ": -9.655486064730212e-05
+              },
+              {
+                "Ex": -0.03243706375360489
+              },
+              {
+                "plain": -0.00016378014697693288
+              },
+              {
+                " this": -7.033100700937212e-05
+              },
+              {
+                " mathematical": -7.712543447269127e-05
+              }
+            ]
+          },
+          "finish_reason": "length",
+          "stop_reason": null,
+          "token_ids": null,
+          "prompt_logprobs": null,
+          "prompt_token_ids": null,
+          "routed_experts": null
+        }
+      ],
+      "service_tier": null,
+      "system_fingerprint": "vllm-0.1.dev202+g0af34418e-b29887e1",
+      "usage": {
+        "prompt_tokens": 4097,
+        "total_tokens": 4113,
+        "completion_tokens": 16,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "kv_transfer_params": null,
+      "ec_transfer_params": null,
+      "metrics": null
+    },
+    {
+      "id": "cmpl-validation-0d97dae62731486db5e80972e263a483-2",
+      "object": "text_completion",
+      "created": 1790657527,
+      "model": "rl-probe",
+      "choices": [
+        {
+          "index": 0,
+          "text": " this mathematical argument. Explain this mathematical argument. Explain this mathematical",
+          "logprobs": {
+            "text_offset": [
+              0,
+              5,
+              18,
+              27,
+              28,
+              29,
+              31,
+              36,
+              41,
+              54,
+              63,
+              64,
+              65,
+              67,
+              72,
+              77
+            ],
+            "token_logprobs": [
+              -6.615896563744172e-05,
+              -8.451581379631534e-05,
+              -0.0001399419124936685,
+              -0.0003082277253270149,
+              -0.00011336160969221964,
+              -0.03276556357741356,
+              -0.00014590153296012431,
+              -6.472854875028133e-05,
+              -8.225102646974847e-05,
+              -0.000120751719805412,
+              -0.0003104920033365488,
+              -9.655486064730212e-05,
+              -0.03243706375360489,
+              -0.00016378014697693288,
+              -7.033100700937212e-05,
+              -7.712543447269127e-05
+            ],
+            "tokens": [
+              " this",
+              " mathematical",
+              " argument",
+              ".",
+              " ",
+              "Ex",
+              "plain",
+              " this",
+              " mathematical",
+              " argument",
+              ".",
+              " ",
+              "Ex",
+              "plain",
+              " this",
+              " mathematical"
+            ],
+            "top_logprobs": [
+              {
+                " this": -6.615896563744172e-05
+              },
+              {
+                " mathematical": -8.451581379631534e-05
+              },
+              {
+                " argument": -0.0001399419124936685
+              },
+              {
+                ".": -0.0003082277253270149
+              },
+              {
+                " ": -0.00011336160969221964
+              },
+              {
+                "Ex": -0.03276556357741356
+              },
+              {
+                "plain": -0.00014590153296012431
+              },
+              {
+                " this": -6.472854875028133e-05
+              },
+              {
+                " mathematical": -8.225102646974847e-05
+              },
+              {
+                " argument": -0.000120751719805412
+              },
+              {
+                ".": -0.0003104920033365488
+              },
+              {
+                " ": -9.655486064730212e-05
+              },
+              {
+                "Ex": -0.03243706375360489
+              },
+              {
+                "plain": -0.00016378014697693288
+              },
+              {
+                " this": -7.033100700937212e-05
+              },
+              {
+                " mathematical": -7.712543447269127e-05
+              }
+            ]
+          },
+          "finish_reason": "length",
+          "stop_reason": null,
+          "token_ids": null,
+          "prompt_logprobs": null,
+          "prompt_token_ids": null,
+          "routed_experts": null
+        }
+      ],
+      "service_tier": null,
+      "system_fingerprint": "vllm-0.1.dev202+g0af34418e-b29887e1",
+      "usage": {
+        "prompt_tokens": 4097,
+        "total_tokens": 4113,
+        "completion_tokens": 16,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "kv_transfer_params": null,
+      "ec_transfer_params": null,
+      "metrics": null
+    },
+    {
+      "id": "cmpl-validation-0d97dae62731486db5e80972e263a483-3",
+      "object": "text_completion",
+      "created": 1790657527,
+      "model": "rl-probe",
+      "choices": [
+        {
+          "index": 0,
+          "text": " this mathematical argument. Explain this mathematical argument. Explain this mathematical",
+          "logprobs": {
+            "text_offset": [
+              0,
+              5,
+              18,
+              27,
+              28,
+              29,
+              31,
+              36,
+              41,
+              54,
+              63,
+              64,
+              65,
+              67,
+              72,
+              77
+            ],
+            "token_logprobs": [
+              -6.615896563744172e-05,
+              -8.451581379631534e-05,
+              -0.0001399419124936685,
+              -0.0003082277253270149,
+              -0.00011336160969221964,
+              -0.03276556357741356,
+              -0.00014590153296012431,
+              -6.472854875028133e-05,
+              -8.225102646974847e-05,
+              -0.000120751719805412,
+              -0.0003104920033365488,
+              -9.655486064730212e-05,
+              -0.03243706375360489,
+              -0.00016378014697693288,
+              -7.033100700937212e-05,
+              -7.712543447269127e-05
+            ],
+            "tokens": [
+              " this",
+              " mathematical",
+              " argument",
+              ".",
+              " ",
+              "Ex",
+              "plain",
+              " this",
+              " mathematical",
+              " argument",
+              ".",
+              " ",
+              "Ex",
+              "plain",
+              " this",
+              " mathematical"
+            ],
+            "top_logprobs": [
+              {
+                " this": -6.615896563744172e-05
+              },
+              {
+                " mathematical": -8.451581379631534e-05
+              },
+              {
+                " argument": -0.0001399419124936685
+              },
+              {
+                ".": -0.0003082277253270149
+              },
+              {
+                " ": -0.00011336160969221964
+              },
+              {
+                "Ex": -0.03276556357741356
+              },
+              {
+                "plain": -0.00014590153296012431
+              },
+              {
+                " this": -6.472854875028133e-05
+              },
+              {
+                " mathematical": -8.225102646974847e-05
+              },
+              {
+                " argument": -0.000120751719805412
+              },
+              {
+                ".": -0.0003104920033365488
+              },
+              {
+                " ": -9.655486064730212e-05
+              },
+              {
+                "Ex": -0.03243706375360489
+              },
+              {
+                "plain": -0.00016378014697693288
+              },
+              {
+                " this": -7.033100700937212e-05
+              },
+              {
+                " mathematical": -7.712543447269127e-05
+              }
+            ]
+          },
+          "finish_reason": "length",
+          "stop_reason": null,
+          "token_ids": null,
+          "prompt_logprobs": null,
+          "prompt_token_ids": null,
+          "routed_experts": null
+        }
+      ],
+      "service_tier": null,
+      "system_fingerprint": "vllm-0.1.dev202+g0af34418e-b29887e1",
+      "usage": {
+        "prompt_tokens": 4097,
+        "total_tokens": 4113,
+        "completion_tokens": 16,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "kv_transfer_params": null,
+      "ec_transfer_params": null,
+      "metrics": null
+    },
+    {
+      "id": "cmpl-validation-0d97dae62731486db5e80972e263a483-4",
+      "object": "text_completion",
+      "created": 1790657527,
+      "model": "rl-probe",
+      "choices": [
+        {
+          "index": 0,
+          "text": " this mathematical argument. Explain this mathematical argument. Explain this mathematical",
+          "logprobs": {
+            "text_offset": [
+              0,
+              5,
+              18,
+              27,
+              28,
+              29,
+              31,
+              36,
+              41,
+              54,
+              63,
+              64,
+              65,
+              67,
+              72,
+              77
+            ],
+            "token_logprobs": [
+              -6.365573790390044e-05,
+              -8.225102646974847e-05,
+              -0.00012385078298393637,
+              -0.00027426297310739756,
+              -0.00011002412065863609,
+              -0.0292668417096138,
+              -0.0001656871900195256,
+              -6.3774932641536e-05,
+              -7.986703712958843e-05,
+              -0.00012039413559250534,
+              -0.0002865380665753037,
+              -0.00010895135346800089,
+              -0.03683582693338394,
+              -0.0001854724541772157,
+              -6.794698856538162e-05,
+              -8.356221951544285e-05
+            ],
+            "tokens": [
+              " this",
+              " mathematical",
+              " argument",
+              ".",
+              " ",
+              "Ex",
+              "plain",
+              " this",
+              " mathematical",
+              " argument",
+              ".",
+              " ",
+              "Ex",
+              "plain",
+              " this",
+              " mathematical"
+            ],
+            "top_logprobs": [
+              {
+                " this": -6.365573790390044e-05
+              },
+              {
+                " mathematical": -8.225102646974847e-05
+              },
+              {
+                " argument": -0.00012385078298393637
+              },
+              {
+                ".": -0.00027426297310739756
+              },
+              {
+                " ": -0.00011002412065863609
+              },
+              {
+                "Ex": -0.0292668417096138
+              },
+              {
+                "plain": -0.0001656871900195256
+              },
+              {
+                " this": -6.3774932641536e-05
+              },
+              {
+                " mathematical": -7.986703712958843e-05
+              },
+              {
+                " argument": -0.00012039413559250534
+              },
+              {
+                ".": -0.0002865380665753037
+              },
+              {
+                " ": -0.00010895135346800089
+              },
+              {
+                "Ex": -0.03683582693338394
+              },
+              {
+                "plain": -0.0001854724541772157
+              },
+              {
+                " this": -6.794698856538162e-05
+              },
+              {
+                " mathematical": -8.356221951544285e-05
+              }
+            ]
+          },
+          "finish_reason": "length",
+          "stop_reason": null,
+          "token_ids": null,
+          "prompt_logprobs": null,
+          "prompt_token_ids": null,
+          "routed_experts": null
+        }
+      ],
+      "service_tier": null,
+      "system_fingerprint": "vllm-0.1.dev202+g0af34418e-b29887e1",
+      "usage": {
+        "prompt_tokens": 4097,
+        "total_tokens": 4113,
+        "completion_tokens": 16,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "kv_transfer_params": null,
+      "ec_transfer_params": null,
+      "metrics": null
+    },
+    {
+      "id": "cmpl-validation-0d97dae62731486db5e80972e263a483-5",
+      "object": "text_completion",
+      "created": 1790657527,
+      "model": "rl-probe",
+      "choices": [
+        {
+          "index": 0,
+          "text": " this mathematical argument. Explain this mathematical argument. Explain this mathematical",
+          "logprobs": {
+            "text_offset": [
+              0,
+              5,
+              18,
+              27,
+              28,
+              29,
+              31,
+              36,
+              41,
+              54,
+              63,
+              64,
+              65,
+              67,
+              72,
+              77
+            ],
+            "token_logprobs": [
+              -6.365573790390044e-05,
+              -8.225102646974847e-05,
+              -0.00012385078298393637,
+              -0.00027426297310739756,
+              -0.00011002412065863609,
+              -0.0292668417096138,
+              -0.0001656871900195256,
+              -6.3774932641536e-05,
+              -7.986703712958843e-05,
+              -0.00012039413559250534,
+              -0.0002865380665753037,
+              -0.00010895135346800089,
+              -0.03683582693338394,
+              -0.0001854724541772157,
+              -6.794698856538162e-05,
+              -8.356221951544285e-05
+            ],
+            "tokens": [
+              " this",
+              " mathematical",
+              " argument",
+              ".",
+              " ",
+              "Ex",
+              "plain",
+              " this",
+              " mathematical",
+              " argument",
+              ".",
+              " ",
+              "Ex",
+              "plain",
+              " this",
+              " mathematical"
+            ],
+            "top_logprobs": [
+              {
+                " this": -6.365573790390044e-05
+              },
+              {
+                " mathematical": -8.225102646974847e-05
+              },
+              {
+                " argument": -0.00012385078298393637
+              },
+              {
+                ".": -0.00027426297310739756
+              },
+              {
+                " ": -0.00011002412065863609
+              },
+              {
+                "Ex": -0.0292668417096138
+              },
+              {
+                "plain": -0.0001656871900195256
+              },
+              {
+                " this": -6.3774932641536e-05
+              },
+              {
+                " mathematical": -7.986703712958843e-05
+              },
+              {
+                " argument": -0.00012039413559250534
+              },
+              {
+                ".": -0.0002865380665753037
+              },
+              {
+                " ": -0.00010895135346800089
+              },
+              {
+                "Ex": -0.03683582693338394
+              },
+              {
+                "plain": -0.0001854724541772157
+              },
+              {
+                " this": -6.794698856538162e-05
+              },
+              {
+                " mathematical": -8.356221951544285e-05
+              }
+            ]
+          },
+          "finish_reason": "length",
+          "stop_reason": null,
+          "token_ids": null,
+          "prompt_logprobs": null,
+          "prompt_token_ids": null,
+          "routed_experts": null
+        }
+      ],
+      "service_tier": null,
+      "system_fingerprint": "vllm-0.1.dev202+g0af34418e-b29887e1",
+      "usage": {
+        "prompt_tokens": 4097,
+        "total_tokens": 4113,
+        "completion_tokens": 16,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "kv_transfer_params": null,
+      "ec_transfer_params": null,
+      "metrics": null
+    },
+    {
+      "id": "cmpl-validation-0d97dae62731486db5e80972e263a483-6",
+      "object": "text_completion",
+      "created": 1790657527,
+      "model": "rl-probe",
+      "choices": [
+        {
+          "index": 0,
+          "text": " this mathematical argument. Explain this mathematical argument. Explain this mathematical",
+          "logprobs": {
+            "text_offset": [
+              0,
+              5,
+              18,
+              27,
+              28,
+              29,
+              31,
+              36,
+              41,
+              54,
+              63,
+              64,
+              65,
+              67,
+              72,
+              77
+            ],
+            "token_logprobs": [
+              -6.41325386823155e-05,
+              -9.095255518332124e-05,
+              -0.00013326710904948413,
+              -0.00027223696815781295,
+              -0.00010287232726113871,
+              -0.028853686526417732,
+              -0.0001646144810365513,
+              -6.90197994117625e-05,
+              -8.654219709569588e-05,
+              -0.00011252723925281316,
+              -0.0002932118659373373,
+              -0.00010644822759786621,
+              -0.03279383108019829,
+              -0.00016437610611319542,
+              -7.021180499577895e-05,
+              -8.129743218887597e-05
+            ],
+            "tokens": [
+              " this",
+              " mathematical",
+              " argument",
+              ".",
+              " ",
+              "Ex",
+              "plain",
+              " this",
+              " mathematical",
+              " argument",
+              ".",
+              " ",
+              "Ex",
+              "plain",
+              " this",
+              " mathematical"
+            ],
+            "top_logprobs": [
+              {
+                " this": -6.41325386823155e-05
+              },
+              {
+                " mathematical": -9.095255518332124e-05
+              },
+              {
+                " argument": -0.00013326710904948413
+              },
+              {
+                ".": -0.00027223696815781295
+              },
+              {
+                " ": -0.00010287232726113871
+              },
+              {
+                "Ex": -0.028853686526417732
+              },
+              {
+                "plain": -0.0001646144810365513
+              },
+              {
+                " this": -6.90197994117625e-05
+              },
+              {
+                " mathematical": -8.654219709569588e-05
+              },
+              {
+                " argument": -0.00011252723925281316
+              },
+              {
+                ".": -0.0002932118659373373
+              },
+              {
+                " ": -0.00010644822759786621
+              },
+              {
+                "Ex": -0.03279383108019829
+              },
+              {
+                "plain": -0.00016437610611319542
+              },
+              {
+                " this": -7.021180499577895e-05
+              },
+              {
+                " mathematical": -8.129743218887597e-05
+              }
+            ]
+          },
+          "finish_reason": "length",
+          "stop_reason": null,
+          "token_ids": null,
+          "prompt_logprobs": null,
+          "prompt_token_ids": null,
+          "routed_experts": null
+        }
+      ],
+      "service_tier": null,
+      "system_fingerprint": "vllm-0.1.dev202+g0af34418e-b29887e1",
+      "usage": {
+        "prompt_tokens": 4097,
+        "total_tokens": 4113,
+        "completion_tokens": 16,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "kv_transfer_params": null,
+      "ec_transfer_params": null,
+      "metrics": null
+    },
+    {
+      "id": "cmpl-validation-0d97dae62731486db5e80972e263a483-7",
+      "object": "text_completion",
+      "created": 1790657527,
+      "model": "rl-probe",
+      "choices": [
+        {
+          "index": 0,
+          "text": " this mathematical argument. Explain this mathematical argument. Explain this mathematical",
+          "logprobs": {
+            "text_offset": [
+              0,
+              5,
+              18,
+              27,
+              28,
+              29,
+              31,
+              36,
+              41,
+              54,
+              63,
+              64,
+              65,
+              67,
+              72,
+              77
+            ],
+            "token_logprobs": [
+              -6.41325386823155e-05,
+              -9.095255518332124e-05,
+              -0.00013326710904948413,
+              -0.00027223696815781295,
+              -0.00010287232726113871,
+              -0.028853686526417732,
+              -0.0001646144810365513,
+              -6.90197994117625e-05,
+              -8.654219709569588e-05,
+              -0.00011252723925281316,
+              -0.0002932118659373373,
+              -0.00010644822759786621,
+              -0.03279383108019829,
+              -0.00016437610611319542,
+              -7.021180499577895e-05,
+              -8.129743218887597e-05
+            ],
+            "tokens": [
+              " this",
+              " mathematical",
+              " argument",
+              ".",
+              " ",
+              "Ex",
+              "plain",
+              " this",
+              " mathematical",
+              " argument",
+              ".",
+              " ",
+              "Ex",
+              "plain",
+              " this",
+              " mathematical"
+            ],
+            "top_logprobs": [
+              {
+                " this": -6.41325386823155e-05
+              },
+              {
+                " mathematical": -9.095255518332124e-05
+              },
+              {
+                " argument": -0.00013326710904948413
+              },
+              {
+                ".": -0.00027223696815781295
+              },
+              {
+                " ": -0.00010287232726113871
+              },
+              {
+                "Ex": -0.028853686526417732
+              },
+              {
+                "plain": -0.0001646144810365513
+              },
+              {
+                " this": -6.90197994117625e-05
+              },
+              {
+                " mathematical": -8.654219709569588e-05
+              },
+              {
+                " argument": -0.00011252723925281316
+              },
+              {
+                ".": -0.0002932118659373373
+              },
+              {
+                " ": -0.00010644822759786621
+              },
+              {
+                "Ex": -0.03279383108019829
+              },
+              {
+                "plain": -0.00016437610611319542
+              },
+              {
+                " this": -7.021180499577895e-05
+              },
+              {
+                " mathematical": -8.129743218887597e-05
+              }
+            ]
+          },
+          "finish_reason": "length",
+          "stop_reason": null,
+          "token_ids": null,
+          "prompt_logprobs": null,
+          "prompt_token_ids": null,
+          "routed_experts": null
+        }
+      ],
+      "service_tier": null,
+      "system_fingerprint": "vllm-0.1.dev202+g0af34418e-b29887e1",
+      "usage": {
+        "prompt_tokens": 4097,
+        "total_tokens": 4113,
+        "completion_tokens": 16,
+        "prompt_tokens_details": null,
+        "completion_tokens_details": null
+      },
+      "kv_transfer_params": null,
+      "ec_transfer_params": null,
+      "metrics": null
+    }
+  ],
+  "checks": [
+    {
+      "text_equal": true,
+      "finish_equal": true,
+      "logprobs_comparable": true,
+      "max_abs_logprob_error": 0.0002525635063648224,
+      "within_tolerance": true
+    },
+    {
+      "text_equal": true,
+      "finish_equal": true,
+      "logprobs_comparable": true,
+      "max_abs_logprob_error": 0.003966197371482849,
+      "within_tolerance": true
+    },
+    {
+      "text_equal": true,
+      "finish_equal": true,
+      "logprobs_comparable": true,
+      "max_abs_logprob_error": 0.003966197371482849,
+      "within_tolerance": true
+    },
+    {
+      "text_equal": true,
+      "finish_equal": true,
+      "logprobs_comparable": true,
+      "max_abs_logprob_error": 0.003966197371482849,
+      "within_tolerance": true
+    },
+    {
+      "text_equal": true,
+      "finish_equal": true,
+      "logprobs_comparable": true,
+      "max_abs_logprob_error": 0.004294559359550476,
+      "within_tolerance": true
+    },
+    {
+      "text_equal": true,
+      "finish_equal": true,
+      "logprobs_comparable": true,
+      "max_abs_logprob_error": 0.004294559359550476,
+      "within_tolerance": true
+    },
+    {
+      "text_equal": true,
+      "finish_equal": true,
+      "logprobs_comparable": true,
+      "max_abs_logprob_error": 0.0002525635063648224,
+      "within_tolerance": true
+    },
+    {
+      "text_equal": true,
+      "finish_equal": true,
+      "logprobs_comparable": true,
+      "max_abs_logprob_error": 0.0002525635063648224,
+      "within_tolerance": true
+    }
+  ],
+  "scope": "one fixed checkpoint, TP1 local vs NIXL deterministic generation; does not by itself prove cancellation/failure behavior"
+}

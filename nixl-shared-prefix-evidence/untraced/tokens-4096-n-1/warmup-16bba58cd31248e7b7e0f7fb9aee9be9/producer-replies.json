@@ -1,0 +1,56 @@
+[
+  [
+    "warmup-16bba58cd31248e7b7e0f7fb9aee9be9-0",
+    {
+      "do_remote_prefill": true,
+      "do_remote_decode": false,
+      "remote_block_ids": [
+        [
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103
+        ]
+      ],
+      "remote_engine_id": "e63beac8-9f8f-44f9-850a-316b1543ba77",
+      "remote_request_id": "cmpl-warmup-16bba58cd31248e7b7e0f7fb9aee9be9-0-0-9309a43c",
+      "remote_host": "localhost",
+      "remote_port": 54643,
+      "tp_size": 1,
+      "dcp_size": 1,
+      "pp_size": 1,
+      "remote_num_tokens": 4096,
+      "remote_blocks_expiry_time": null,
+      "transfer_mode": "pull",
+      "remote_prefill_cached_tokens": 0
+    }
+  ]
+]

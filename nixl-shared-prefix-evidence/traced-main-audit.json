@@ -1,0 +1,407 @@
+{
+  "method": "independent raw Prometheus deltas + worker/scheduler JSONL; no imports of existing summarizer",
+  "rows": [
+    {
+      "variant": "7529315/baseline",
+      "case": "tokens-4096-n-1",
+      "group_id": "grpo-940b91d68ad04f95b156680daa6f1a9c",
+      "metric_delta": {
+        "vllm:nixl_bytes_transferred_count": 1.0,
+        "vllm:nixl_bytes_transferred_sum": 469762048.0,
+        "vllm:nixl_num_failed_transfers_total": 0.0,
+        "vllm:nixl_num_kv_expired_reqs_total": 0.0
+      },
+      "handles": 1,
+      "notify_only": 0,
+      "payload_MiB": 448.0,
+      "dest_read_blocks": 32,
+      "peak_live_blocks": 33,
+      "source_reads": 32,
+      "unique_source_blocks": 32,
+      "repeated_source_reads": 0,
+      "identical_full_read_plan_duplicates": 0,
+      "d_ttft_ms": [
+        170.53191596642137
+      ],
+      "d_ttft_median_ms": 170.53191596642137,
+      "e2e_ttft_median_ms": 8305.92039693147,
+      "successes": 1,
+      "errors": [],
+      "producer_ids": 1,
+      "producer_remote_block_sizes": [
+        -1
+      ],
+      "source_file": "research/miles-sglang-vllm/implementation/environment/results/7529315/baseline/tokens-4096-n-1/grpo-940b91d68ad04f95b156680daa6f1a9c/result.json"
+    },
+    {
+      "variant": "7529315/baseline",
+      "case": "tokens-4096-n-4",
+      "group_id": "grpo-e441dc9ce0344089a826c9b1b54d9746",
+      "metric_delta": {
+        "vllm:nixl_bytes_transferred_count": 4.0,
+        "vllm:nixl_bytes_transferred_sum": 1879048192.0,
+        "vllm:nixl_num_failed_transfers_total": 0.0,
+        "vllm:nixl_num_kv_expired_reqs_total": 0.0
+      },
+      "handles": 4,
+      "notify_only": 0,
+      "payload_MiB": 1792.0,
+      "dest_read_blocks": 128,
+      "peak_live_blocks": 132,
+      "source_reads": 128,
+      "unique_source_blocks": 35,
+      "repeated_source_reads": 93,
+      "identical_full_read_plan_duplicates": 0,
+      "d_ttft_ms": [
+        83.24734400957823,
+        111.51226796209812,
+        111.24218720942736,
+        110.59911269694567
+      ],
+      "d_ttft_median_ms": 110.92064995318651,
+      "e2e_ttft_median_ms": 3300.002248957753,
+      "successes": 4,
+      "errors": [],
+      "producer_ids": 4,
+      "producer_remote_block_sizes": [
+        -1
+      ],
+      "source_file": "research/miles-sglang-vllm/implementation/environment/results/7529315/baseline/tokens-4096-n-4/grpo-e441dc9ce0344089a826c9b1b54d9746/result.json"
+    },
+    {
+      "variant": "7529315/baseline",
+      "case": "tokens-4097-n-1",
+      "group_id": "grpo-65eefdf5e8af44e1b17decd90690a214",
+      "metric_delta": {
+        "vllm:nixl_bytes_transferred_count": 1.0,
+        "vllm:nixl_bytes_transferred_sum": 484442112.0,
+        "vllm:nixl_num_failed_transfers_total": 0.0,
+        "vllm:nixl_num_kv_expired_reqs_total": 0.0
+      },
+      "handles": 1,
+      "notify_only": 0,
+      "payload_MiB": 462.0,
+      "dest_read_blocks": 33,
+      "peak_live_blocks": 33,
+      "source_reads": 33,
+      "unique_source_blocks": 33,
+      "repeated_source_reads": 0,
+      "identical_full_read_plan_duplicates": 0,
+      "d_ttft_ms": [
+        62.51658918336034
+      ],
+      "d_ttft_median_ms": 62.51658918336034,
+      "e2e_ttft_median_ms": 95.22389527410269,
+      "successes": 1,
+      "errors": [],
+      "producer_ids": 1,
+      "producer_remote_block_sizes": [
+        -1
+      ],
+      "source_file": "research/miles-sglang-vllm/implementation/environment/results/7529315/baseline/tokens-4097-n-1/grpo-65eefdf5e8af44e1b17decd90690a214/result.json"
+    },
+    {
+      "variant": "7529315/baseline",
+      "case": "tokens-4097-n-4",
+      "group_id": "grpo-31930b6978a5400fa9ba6ea2a3485ccb",
+      "metric_delta": {
+        "vllm:nixl_bytes_transferred_count": 4.0,
+        "vllm:nixl_bytes_transferred_sum": 1937768448.0,
+        "vllm:nixl_num_failed_transfers_total": 0.0,
+        "vllm:nixl_num_kv_expired_reqs_total": 0.0
+      },
+      "handles": 4,
+      "notify_only": 0,
+      "payload_MiB": 1848.0,
+      "dest_read_blocks": 132,
+      "peak_live_blocks": 132,
+      "source_reads": 132,
+      "unique_source_blocks": 36,
+      "repeated_source_reads": 96,
+      "identical_full_read_plan_duplicates": 0,
+      "d_ttft_ms": [
+        73.7060010433197,
+        99.21216405928135,
+        98.69872266426682,
+        98.47459383308887
+      ],
+      "d_ttft_median_ms": 98.58665824867785,
+      "e2e_ttft_median_ms": 164.00882438756526,
+      "successes": 4,
+      "errors": [],
+      "producer_ids": 4,
+      "producer_remote_block_sizes": [
+        -1
+      ],
+      "source_file": "research/miles-sglang-vllm/implementation/environment/results/7529315/baseline/tokens-4097-n-4/grpo-31930b6978a5400fa9ba6ea2a3485ccb/result.json"
+    },
+    {
+      "variant": "7529450/shared-false",
+      "case": "tokens-4096-n-1",
+      "group_id": "grpo-1cdf07a8074649a197e99b132e4bead7",
+      "metric_delta": {
+        "vllm:nixl_bytes_transferred_count": 1.0,
+        "vllm:nixl_bytes_transferred_sum": 469762048.0,
+        "vllm:nixl_num_failed_transfers_total": 0.0,
+        "vllm:nixl_num_kv_expired_reqs_total": 0.0
+      },
+      "handles": 1,
+      "notify_only": 0,
+      "payload_MiB": 448.0,
+      "dest_read_blocks": 32,
+      "peak_live_blocks": 33,
+      "source_reads": 32,
+      "unique_source_blocks": 32,
+      "repeated_source_reads": 0,
+      "identical_full_read_plan_duplicates": 0,
+      "d_ttft_ms": [
+        154.36873806174845
+      ],
+      "d_ttft_median_ms": 154.36873806174845,
+      "e2e_ttft_median_ms": 472.1449100179598,
+      "successes": 1,
+      "errors": [],
+      "producer_ids": 1,
+      "producer_remote_block_sizes": [
+        128
+      ],
+      "source_file": "research/miles-sglang-vllm/implementation/environment/results/7529450/shared-false/tokens-4096-n-1/grpo-1cdf07a8074649a197e99b132e4bead7/result.json"
+    },
+    {
+      "variant": "7529450/shared-false",
+      "case": "tokens-4096-n-4",
+      "group_id": "grpo-04969a095b304e46bacae2a429b5ad1c",
+      "metric_delta": {
+        "vllm:nixl_bytes_transferred_count": 4.0,
+        "vllm:nixl_bytes_transferred_sum": 1879048192.0,
+        "vllm:nixl_num_failed_transfers_total": 0.0,
+        "vllm:nixl_num_kv_expired_reqs_total": 0.0
+      },
+      "handles": 4,
+      "notify_only": 0,
+      "payload_MiB": 1792.0,
+      "dest_read_blocks": 128,
+      "peak_live_blocks": 132,
+      "source_reads": 128,
+      "unique_source_blocks": 35,
+      "repeated_source_reads": 93,
+      "identical_full_read_plan_duplicates": 0,
+      "d_ttft_ms": [
+        79.20834794640541,
+        105.71689007338136,
+        105.422202963382,
+        104.96549995150417
+      ],
+      "d_ttft_median_ms": 105.19385145744309,
+      "e2e_ttft_median_ms": 206.46336098434404,
+      "successes": 4,
+      "errors": [],
+      "producer_ids": 4,
+      "producer_remote_block_sizes": [
+        128
+      ],
+      "source_file": "research/miles-sglang-vllm/implementation/environment/results/7529450/shared-false/tokens-4096-n-4/grpo-04969a095b304e46bacae2a429b5ad1c/result.json"
+    },
+    {
+      "variant": "7529450/shared-false",
+      "case": "tokens-4097-n-1",
+      "group_id": "grpo-8620c5f9abcf4660bbd246252d323548",
+      "metric_delta": {
+        "vllm:nixl_bytes_transferred_count": 1.0,
+        "vllm:nixl_bytes_transferred_sum": 484442112.0,
+        "vllm:nixl_num_failed_transfers_total": 0.0,
+        "vllm:nixl_num_kv_expired_reqs_total": 0.0
+      },
+      "handles": 1,
+      "notify_only": 0,
+      "payload_MiB": 462.0,
+      "dest_read_blocks": 33,
+      "peak_live_blocks": 33,
+      "source_reads": 33,
+      "unique_source_blocks": 33,
+      "repeated_source_reads": 0,
+      "identical_full_read_plan_duplicates": 0,
+      "d_ttft_ms": [
+        59.960651909932494
+      ],
+      "d_ttft_median_ms": 59.960651909932494,
+      "e2e_ttft_median_ms": 92.03010890632868,
+      "successes": 1,
+      "errors": [],
+      "producer_ids": 1,
+      "producer_remote_block_sizes": [
+        128
+      ],
+      "source_file": "research/miles-sglang-vllm/implementation/environment/results/7529450/shared-false/tokens-4097-n-1/grpo-8620c5f9abcf4660bbd246252d323548/result.json"
+    },
+    {
+      "variant": "7529450/shared-false",
+      "case": "tokens-4097-n-4",
+      "group_id": "grpo-d9af10e601f9410fa0ee3db3f416bd84",
+      "metric_delta": {
+        "vllm:nixl_bytes_transferred_count": 4.0,
+        "vllm:nixl_bytes_transferred_sum": 1937768448.0,
+        "vllm:nixl_num_failed_transfers_total": 0.0,
+        "vllm:nixl_num_kv_expired_reqs_total": 0.0
+      },
+      "handles": 4,
+      "notify_only": 0,
+      "payload_MiB": 1848.0,
+      "dest_read_blocks": 132,
+      "peak_live_blocks": 132,
+      "source_reads": 132,
+      "unique_source_blocks": 36,
+      "repeated_source_reads": 96,
+      "identical_full_read_plan_duplicates": 0,
+      "d_ttft_ms": [
+        68.12911189626902,
+        92.26274897810072,
+        91.80470206774771,
+        91.76633495371789
+      ],
+      "d_ttft_median_ms": 91.7855185107328,
+      "e2e_ttft_median_ms": 152.96392748132348,
+      "successes": 4,
+      "errors": [],
+      "producer_ids": 4,
+      "producer_remote_block_sizes": [
+        128
+      ],
+      "source_file": "research/miles-sglang-vllm/implementation/environment/results/7529450/shared-false/tokens-4097-n-4/grpo-d9af10e601f9410fa0ee3db3f416bd84/result.json"
+    },
+    {
+      "variant": "7529450/shared-true",
+      "case": "tokens-4096-n-1",
+      "group_id": "grpo-dcffeedde8ef406dbee18cbe7ec292da",
+      "metric_delta": {
+        "vllm:nixl_bytes_transferred_count": 1.0,
+        "vllm:nixl_bytes_transferred_sum": 469762048.0,
+        "vllm:nixl_num_failed_transfers_total": 0.0,
+        "vllm:nixl_num_kv_expired_reqs_total": 0.0
+      },
+      "handles": 1,
+      "notify_only": 0,
+      "payload_MiB": 448.0,
+      "dest_read_blocks": 32,
+      "peak_live_blocks": 33,
+      "source_reads": 32,
+      "unique_source_blocks": 32,
+      "repeated_source_reads": 0,
+      "identical_full_read_plan_duplicates": 0,
+      "d_ttft_ms": [
+        153.51876197382808
+      ],
+      "d_ttft_median_ms": 153.51876197382808,
+      "e2e_ttft_median_ms": 277.6332809589803,
+      "successes": 1,
+      "errors": [],
+      "producer_ids": 1,
+      "producer_remote_block_sizes": [
+        128
+      ],
+      "source_file": "research/miles-sglang-vllm/implementation/environment/results/7529450/shared-true/tokens-4096-n-1/grpo-dcffeedde8ef406dbee18cbe7ec292da/result.json"
+    },
+    {
+      "variant": "7529450/shared-true",
+      "case": "tokens-4096-n-4",
+      "group_id": "grpo-03ccf652cdc1418db25f4936e93d1a96",
+      "metric_delta": {
+        "vllm:nixl_bytes_transferred_count": 1.0,
+        "vllm:nixl_bytes_transferred_sum": 469762048.0,
+        "vllm:nixl_num_failed_transfers_total": 0.0,
+        "vllm:nixl_num_kv_expired_reqs_total": 0.0
+      },
+      "handles": 1,
+      "notify_only": 3,
+      "payload_MiB": 448.0,
+      "dest_read_blocks": 32,
+      "peak_live_blocks": 39,
+      "source_reads": 32,
+      "unique_source_blocks": 32,
+      "repeated_source_reads": 0,
+      "identical_full_read_plan_duplicates": 0,
+      "d_ttft_ms": [
+        81.23498491477221,
+        80.5162990000099,
+        80.3918190067634,
+        80.01159597188234
+      ],
+      "d_ttft_median_ms": 80.45405900338665,
+      "e2e_ttft_median_ms": 150.33961849985644,
+      "successes": 4,
+      "errors": [],
+      "producer_ids": 4,
+      "producer_remote_block_sizes": [
+        128
+      ],
+      "source_file": "research/miles-sglang-vllm/implementation/environment/results/7529450/shared-true/tokens-4096-n-4/grpo-03ccf652cdc1418db25f4936e93d1a96/result.json"
+    },
+    {
+      "variant": "7529450/shared-true",
+      "case": "tokens-4097-n-1",
+      "group_id": "grpo-7fc677c9ff5d418baba3820d01f23913",
+      "metric_delta": {
+        "vllm:nixl_bytes_transferred_count": 1.0,
+        "vllm:nixl_bytes_transferred_sum": 484442112.0,
+        "vllm:nixl_num_failed_transfers_total": 0.0,
+        "vllm:nixl_num_kv_expired_reqs_total": 0.0
+      },
+      "handles": 1,
+      "notify_only": 0,
+      "payload_MiB": 462.0,
+      "dest_read_blocks": 33,
+      "peak_live_blocks": 33,
+      "source_reads": 33,
+      "unique_source_blocks": 33,
+      "repeated_source_reads": 0,
+      "identical_full_read_plan_duplicates": 0,
+      "d_ttft_ms": [
+        61.14262295886874
+      ],
+      "d_ttft_median_ms": 61.14262295886874,
+      "e2e_ttft_median_ms": 93.09098694939166,
+      "successes": 1,
+      "errors": [],
+      "producer_ids": 1,
+      "producer_remote_block_sizes": [
+        128
+      ],
+      "source_file": "research/miles-sglang-vllm/implementation/environment/results/7529450/shared-true/tokens-4097-n-1/grpo-7fc677c9ff5d418baba3820d01f23913/result.json"
+    },
+    {
+      "variant": "7529450/shared-true",
+      "case": "tokens-4097-n-4",
+      "group_id": "grpo-0787bbfb3c454cdcadfb154ae2bde1d7",
+      "metric_delta": {
+        "vllm:nixl_bytes_transferred_count": 1.0,
+        "vllm:nixl_bytes_transferred_sum": 484442112.0,
+        "vllm:nixl_num_failed_transfers_total": 0.0,
+        "vllm:nixl_num_kv_expired_reqs_total": 0.0
+      },
+      "handles": 1,
+      "notify_only": 3,
+      "payload_MiB": 462.0,
+      "dest_read_blocks": 33,
+      "peak_live_blocks": 36,
+      "source_reads": 33,
+      "unique_source_blocks": 33,
+      "repeated_source_reads": 0,
+      "identical_full_read_plan_duplicates": 0,
+      "d_ttft_ms": [
+        72.87702499888837,
+        72.27862603031099,
+        71.75558700691909,
+        71.67197205126286
+      ],
+      "d_ttft_median_ms": 72.01710651861504,
+      "e2e_ttft_median_ms": 133.94163153134286,
+      "successes": 4,
+      "errors": [],
+      "producer_ids": 4,
+      "producer_remote_block_sizes": [
+        128
+      ],
+      "source_file": "research/miles-sglang-vllm/implementation/environment/results/7529450/shared-true/tokens-4097-n-4/grpo-0787bbfb3c454cdcadfb154ae2bde1d7/result.json"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "job": "7531249",
+  "architecture": "aarch64",
+  "python": "3.12.13 (main, May 15 2026, 21:28:27) [GCC 14.2.0]",
+  "packages": {
+    "torch": "2.13.0",
+    "vllm": "0.1.dev202+g0af34418e.precompiled",
+    "nixl": "1.4.1",
+    "nixl-cu13": "1.4.1",
+    "httpx": "0.28.1",
+    "ray": "2.56.1"
+  },
+  "gpu_inventory": {
+    "command": [
+      "nvidia-smi",
+      "--query-gpu=index,uuid,name,pci.bus_id,memory.total,driver_version",
+      "--format=csv,noheader"
+    ],
+    "returncode": 0,
+    "stdout": "0, <GPU_UUID>, NVIDIA GB200, 00000008:01:00.0, 189471 MiB, 580.126.20\n1, <GPU_UUID>, NVIDIA GB200, 00000009:01:00.0, 189471 MiB, 580.126.20\n2, <GPU_UUID>, NVIDIA GB200, 00000018:01:00.0, 189471 MiB, 580.126.20\n3, <GPU_UUID>, NVIDIA GB200, 00000019:01:00.0, 189471 MiB, 580.126.20\n",
+    "stderr": ""
+  },
+  "gpu_topology": {
+    "command": [
+      "nvidia-smi",
+      "topo",
+      "-m"
+    ],
+    "returncode": 0,
+    "stdout": "\t\u001b[4mGPU0\tGPU1\tGPU2\tGPU3\tNIC0\tNIC1\tNIC2\tNIC3\tNIC4\tNIC5\tCPU Affinity\tNUMA Affinity\tGPU NUMA ID\u001b[0m\nGPU0\t X \tNV18\tNV18\tNV18\tNODE\tNODE\tNODE\tSYS\tSYS\tSYS\t0-71\t0\t\tN/A\nGPU1\tNV18\t X \tNV18\tNV18\tNODE\tNODE\tNODE\tSYS\tSYS\tSYS\t0-71\t0\t\tN/A\nGPU2\tNV18\tNV18\t X \tNV18\tSYS\tSYS\tSYS\tNODE\tNODE\tNODE\t72-143\t1\t\tN/A\nGPU3\tNV18\tNV18\tNV18\t X \tSYS\tSYS\tSYS\tNODE\tNODE\tNODE\t72-143\t1\t\tN/A\nNIC0\tNODE\tNODE\tSYS\tSYS\t X \tNODE\tNODE\tSYS\tSYS\tSYS\t\t\t\t\nNIC1\tNODE\tNODE\tSYS\tSYS\tNODE\t X \tNODE\tSYS\tSYS\tSYS\t\t\t\t\nNIC2\tNODE\tNODE\tSYS\tSYS\tNODE\tNODE\t X \tSYS\tSYS\tSYS\t\t\t\t\nNIC3\tSYS\tSYS\tNODE\tNODE\tSYS\tSYS\tSYS\t X \tNODE\tNODE\t\t\t\t\nNIC4\tSYS\tSYS\tNODE\tNODE\tSYS\tSYS\tSYS\tNODE\t X \tNODE\t\t\t\t\nNIC5\tSYS\tSYS\tNODE\tNODE\tSYS\tSYS\tSYS\tNODE\tNODE\t X \t\t\t\t\n\nLegend:\n\n  X    = Self\n  SYS  = Connection traversing PCIe as well as the SMP interconnect between NUMA nodes (e.g., QPI/UPI)\n  NODE = Connection traversing PCIe as well as the interconnect between PCIe Host Bridges within a NUMA node\n  PHB  = Connection traversing PCIe as well as a PCIe Host Bridge (typically the CPU)\n  PXB  = Connection traversing multiple PCIe bridges (without traversing the PCIe Host Bridge)\n  PIX  = Connection traversing at most a single PCIe bridge\n  NV#  = Connection traversing a bonded set of # NVLinks\n\nNIC Legend:\n\n  NIC0: mlx5_0\n  NIC1: mlx5_1\n  NIC2: mlx5_2\n  NIC3: mlx5_3\n  NIC4: mlx5_4\n  NIC5: mlx5_5\n\n",
+    "stderr": ""
+  },
+  "launcher_gpu_selection": {
+    "producer": "0",
+    "consumer": "1"
+  },
+  "native_wheel": {
+    "commit": "70ae0b7435bcb1ceef051df28c50fb7ee7d1dfec",
+    "url": "https://wheels.vllm.ai/70ae0b7435bcb1ceef051df28c50fb7ee7d1dfec/vllm-0.30.1rc1.dev299%2Bg70ae0b743-cp38-abi3-manylinux_2_28_aarch64.whl",
+    "bytes": 315370794,
+    "sha256": "74a297ca0fdaa888797758e8aa58056b4f0898c69a4cd1e68c5f4d3d45060b19"
+  },
+  "python_source_main": "0af34418e99b972029b53130c9a9665b4e692536",
+  "implementation_parent": "244daac75b3311df5c5367cd671d21070ca1f309",
+  "implementation_commit": "529d59760ff7eed788d31225dc85a800a005db13",
+  "note": "The recorded native extensions are from the wheel, not a fresh source build."
+}

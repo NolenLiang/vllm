@@ -1,0 +1,14 @@
+# Selected original metric lines; unrelated families omitted.
+# HELP vllm:nixl_bytes_transferred Histogram of bytes transferred per NIXL KV Cache transfers.
+# TYPE vllm:nixl_bytes_transferred histogram
+vllm:nixl_bytes_transferred_count{engine="0",model_name="rl-probe"} 0.0
+vllm:nixl_bytes_transferred_sum{engine="0",model_name="rl-probe"} 0.0
+# HELP vllm:nixl_num_failed_transfers_total Number of failed NIXL KV Cache transfers, including handshake and notification failures. NOTE: KV expiry is tracked separately in vllm:nixl_num_kv_expired_reqs.
+# TYPE vllm:nixl_num_failed_transfers_total counter
+vllm:nixl_num_failed_transfers_total{engine="0",model_name="rl-probe"} 0.0
+# HELP vllm:nixl_num_kv_expired_reqs_total Number of requests that had their KV expire. NOTE: This metric is tracked on the P instance.
+# TYPE vllm:nixl_num_kv_expired_reqs_total counter
+vllm:nixl_num_kv_expired_reqs_total{engine="0",model_name="rl-probe"} 0.0
+# HELP vllm:prefix_cache_hits_total Prefix cache hits, in terms of number of cached tokens.
+# TYPE vllm:prefix_cache_hits_total counter
+vllm:prefix_cache_hits_total{engine="0",model_name="rl-probe"} 281728.0

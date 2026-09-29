@@ -1,0 +1,57 @@
+[
+  [
+    "grpo-c4f8cd1e62af41d6864ee815255350fd-0",
+    {
+      "do_remote_prefill": true,
+      "do_remote_decode": false,
+      "remote_block_ids": [
+        [
+          1760,
+          1761,
+          1762,
+          1763,
+          1764,
+          1765,
+          1766,
+          1767,
+          1768,
+          1769,
+          1770,
+          1771,
+          1772,
+          1773,
+          1774,
+          1775,
+          1776,
+          1777,
+          1778,
+          1779,
+          1780,
+          1781,
+          1782,
+          1783,
+          1784,
+          1785,
+          1786,
+          1787,
+          1788,
+          1789,
+          1790,
+          1791,
+          1792
+        ]
+      ],
+      "remote_engine_id": "e63beac8-9f8f-44f9-850a-316b1543ba77",
+      "remote_request_id": "cmpl-grpo-c4f8cd1e62af41d6864ee815255350fd-0-0-9b08b89c",
+      "remote_host": "localhost",
+      "remote_port": 54643,
+      "tp_size": 1,
+      "dcp_size": 1,
+      "pp_size": 1,
+      "remote_num_tokens": 4097,
+      "remote_blocks_expiry_time": null,
+      "transfer_mode": "pull",
+      "remote_prefill_cached_tokens": 0
+    }
+  ]
+]

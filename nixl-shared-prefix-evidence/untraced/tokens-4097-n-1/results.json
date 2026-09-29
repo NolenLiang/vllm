@@ -1,0 +1,494 @@
+{
+  "configuration": {
+    "prefill": "http://127.0.0.1:33411",
+    "decode": "http://127.0.0.1:40977",
+    "model": "rl-probe",
+    "model_revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+    "vllm_revision": "0af34418e99b972029b53130c9a9665b4e692536",
+    "tp": 1,
+    "prefix_tokens": 4097,
+    "siblings": 1,
+    "prefill_mode": "parallel",
+    "groups": 10,
+    "warmup_groups": 2,
+    "output_tokens": 32,
+    "timeout": 180,
+    "metrics_settle_seconds": 12,
+    "output": "<WORKSPACE>/research/miles-sglang-vllm/implementation/environment/results/7531249/baseline-untraced/tokens-4097-n-1"
+  },
+  "workload": "one independent request per sibling, shared salted prompt; P-prefill barrier before simultaneous D admission",
+  "cold_definition": "fresh group cache salt on D; process/JIT may be warm",
+  "bytes_definition": "successful NIXL payload bytes, not physical wire bytes",
+  "warmups": [
+    {
+      "group_id": "warmup-48b08f4476444e4f89323fc5af4f9dd4",
+      "group_index": 0,
+      "phase": "warmup",
+      "successful_requests": 1,
+      "errors": [],
+      "requests": [
+        {
+          "request_id": "warmup-48b08f4476444e4f89323fc5af4f9dd4-0",
+          "decode_ttft_s": 0.06041404511779547,
+          "end_to_end_ttft_s": 0.09359415713697672,
+          "decode_elapsed_s": 0.7418012151028961,
+          "usage": {
+            "prompt_tokens": 4097,
+            "total_tokens": 4129,
+            "completion_tokens": 32
+          },
+          "text": " Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss"
+        }
+      ],
+      "decode_metrics_delta": {
+        "vllm:nixl_bytes_transferred_count": 1.0,
+        "vllm:nixl_bytes_transferred_sum": 484442112.0,
+        "vllm:nixl_num_failed_transfers_total": 0.0,
+        "vllm:nixl_num_kv_expired_reqs_total": 0.0
+      },
+      "prefill_metrics_delta": {
+        "vllm:nixl_bytes_transferred_count": 0.0,
+        "vllm:nixl_bytes_transferred_sum": 0.0,
+        "vllm:nixl_num_failed_transfers_total": 0.0,
+        "vllm:nixl_num_kv_expired_reqs_total": 0.0
+      },
+      "worker_transfers": 1.0,
+      "payload_bytes": 484442112.0,
+      "decode_ttft_median_s": 0.06041404511779547,
+      "duplicate_transfers": null,
+      "unique_destination_gpu_blocks": null,
+      "trace_note": "Use per-rank READ traces for block/duplicate attribution; telemetry counts alone do not prove duplicate prefixes."
+    },
+    {
+      "group_id": "warmup-ab4df584687d4b82898c7862b4195bc8",
+      "group_index": 1,
+      "phase": "warmup",
+      "successful_requests": 1,
+      "errors": [],
+      "requests": [
+        {
+          "request_id": "warmup-ab4df584687d4b82898c7862b4195bc8-0",
+          "decode_ttft_s": 0.05983481206931174,
+          "end_to_end_ttft_s": 0.09676078101620078,
+          "decode_elapsed_s": 0.7393413421232253,
+          "usage": {
+            "prompt_tokens": 4097,
+            "total_tokens": 4129,
+            "completion_tokens": 32
+          },
+          "text": " Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss"
+        }
+      ],
+      "decode_metrics_delta": {
+        "vllm:nixl_bytes_transferred_count": 1.0,
+        "vllm:nixl_bytes_transferred_sum": 484442112.0,
+        "vllm:nixl_num_failed_transfers_total": 0.0,
+        "vllm:nixl_num_kv_expired_reqs_total": 0.0
+      },
+      "prefill_metrics_delta": {
+        "vllm:nixl_bytes_transferred_count": 0.0,
+        "vllm:nixl_bytes_transferred_sum": 0.0,
+        "vllm:nixl_num_failed_transfers_total": 0.0,
+        "vllm:nixl_num_kv_expired_reqs_total": 0.0
+      },
+      "worker_transfers": 1.0,
+      "payload_bytes": 484442112.0,
+      "decode_ttft_median_s": 0.05983481206931174,
+      "duplicate_transfers": null,
+      "unique_destination_gpu_blocks": null,
+      "trace_note": "Use per-rank READ traces for block/duplicate attribution; telemetry counts alone do not prove duplicate prefixes."
+    }
+  ],
+  "groups": [
+    {
+      "group_id": "grpo-cfe5df83aaea4e04bf2f579adb37633a",
+      "group_index": 0,
+      "phase": "measurement",
+      "successful_requests": 1,
+      "errors": [],
+      "requests": [
+        {
+          "request_id": "grpo-cfe5df83aaea4e04bf2f579adb37633a-0",
+          "decode_ttft_s": 0.05589413805864751,
+          "end_to_end_ttft_s": 0.0877393689006567,
+          "decode_elapsed_s": 0.7389822371769696,
+          "usage": {
+            "prompt_tokens": 4097,
+            "total_tokens": 4129,
+            "completion_tokens": 32
+          },
+          "text": " Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss"
+        }
+      ],
+      "decode_metrics_delta": {
+        "vllm:nixl_bytes_transferred_count": 1.0,
+        "vllm:nixl_bytes_transferred_sum": 484442112.0,
+        "vllm:nixl_num_failed_transfers_total": 0.0,
+        "vllm:nixl_num_kv_expired_reqs_total": 0.0
+      },
+      "prefill_metrics_delta": {
+        "vllm:nixl_bytes_transferred_count": 0.0,
+        "vllm:nixl_bytes_transferred_sum": 0.0,
+        "vllm:nixl_num_failed_transfers_total": 0.0,
+        "vllm:nixl_num_kv_expired_reqs_total": 0.0
+      },
+      "worker_transfers": 1.0,
+      "payload_bytes": 484442112.0,
+      "decode_ttft_median_s": 0.05589413805864751,
+      "duplicate_transfers": null,
+      "unique_destination_gpu_blocks": null,
+      "trace_note": "Use per-rank READ traces for block/duplicate attribution; telemetry counts alone do not prove duplicate prefixes."
+    },
+    {
+      "group_id": "grpo-2d646c93071d45d49f7bd10dd4f65f8d",
+      "group_index": 1,
+      "phase": "measurement",
+      "successful_requests": 1,
+      "errors": [],
+      "requests": [
+        {
+          "request_id": "grpo-2d646c93071d45d49f7bd10dd4f65f8d-0",
+          "decode_ttft_s": 0.057616858975961804,
+          "end_to_end_ttft_s": 0.09481546888127923,
+          "decode_elapsed_s": 0.7369373079854995,
+          "usage": {
+            "prompt_tokens": 4097,
+            "total_tokens": 4129,
+            "completion_tokens": 32
+          },
+          "text": " Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss"
+        }
+      ],
+      "decode_metrics_delta": {
+        "vllm:nixl_bytes_transferred_count": 1.0,
+        "vllm:nixl_bytes_transferred_sum": 484442112.0,
+        "vllm:nixl_num_failed_transfers_total": 0.0,
+        "vllm:nixl_num_kv_expired_reqs_total": 0.0
+      },
+      "prefill_metrics_delta": {
+        "vllm:nixl_bytes_transferred_count": 0.0,
+        "vllm:nixl_bytes_transferred_sum": 0.0,
+        "vllm:nixl_num_failed_transfers_total": 0.0,
+        "vllm:nixl_num_kv_expired_reqs_total": 0.0
+      },
+      "worker_transfers": 1.0,
+      "payload_bytes": 484442112.0,
+      "decode_ttft_median_s": 0.057616858975961804,
+      "duplicate_transfers": null,
+      "unique_destination_gpu_blocks": null,
+      "trace_note": "Use per-rank READ traces for block/duplicate attribution; telemetry counts alone do not prove duplicate prefixes."
+    },
+    {
+      "group_id": "grpo-7ab36a399746410fb98468e995a12089",
+      "group_index": 2,
+      "phase": "measurement",
+      "successful_requests": 1,
+      "errors": [],
+      "requests": [
+        {
+          "request_id": "grpo-7ab36a399746410fb98468e995a12089-0",
+          "decode_ttft_s": 0.06014965986832976,
+          "end_to_end_ttft_s": 0.09631361300125718,
+          "decode_elapsed_s": 0.7417216310277581,
+          "usage": {
+            "prompt_tokens": 4097,
+            "total_tokens": 4129,
+            "completion_tokens": 32
+          },
+          "text": " Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss"
+        }
+      ],
+      "decode_metrics_delta": {
+        "vllm:nixl_bytes_transferred_count": 1.0,
+        "vllm:nixl_bytes_transferred_sum": 484442112.0,
+        "vllm:nixl_num_failed_transfers_total": 0.0,
+        "vllm:nixl_num_kv_expired_reqs_total": 0.0
+      },
+      "prefill_metrics_delta": {
+        "vllm:nixl_bytes_transferred_count": 0.0,
+        "vllm:nixl_bytes_transferred_sum": 0.0,
+        "vllm:nixl_num_failed_transfers_total": 0.0,
+        "vllm:nixl_num_kv_expired_reqs_total": 0.0
+      },
+      "worker_transfers": 1.0,
+      "payload_bytes": 484442112.0,
+      "decode_ttft_median_s": 0.06014965986832976,
+      "duplicate_transfers": null,
+      "unique_destination_gpu_blocks": null,
+      "trace_note": "Use per-rank READ traces for block/duplicate attribution; telemetry counts alone do not prove duplicate prefixes."
+    },
+    {
+      "group_id": "grpo-bbadfb969fe746ffbbc3ce8b755dc531",
+      "group_index": 3,
+      "phase": "measurement",
+      "successful_requests": 1,
+      "errors": [],
+      "requests": [
+        {
+          "request_id": "grpo-bbadfb969fe746ffbbc3ce8b755dc531-0",
+          "decode_ttft_s": 0.05763266794383526,
+          "end_to_end_ttft_s": 0.09138183505274355,
+          "decode_elapsed_s": 0.7384522529318929,
+          "usage": {
+            "prompt_tokens": 4097,
+            "total_tokens": 4129,
+            "completion_tokens": 32
+          },
+          "text": " Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss"
+        }
+      ],
+      "decode_metrics_delta": {
+        "vllm:nixl_bytes_transferred_count": 1.0,
+        "vllm:nixl_bytes_transferred_sum": 484442112.0,
+        "vllm:nixl_num_failed_transfers_total": 0.0,
+        "vllm:nixl_num_kv_expired_reqs_total": 0.0
+      },
+      "prefill_metrics_delta": {
+        "vllm:nixl_bytes_transferred_count": 0.0,
+        "vllm:nixl_bytes_transferred_sum": 0.0,
+        "vllm:nixl_num_failed_transfers_total": 0.0,
+        "vllm:nixl_num_kv_expired_reqs_total": 0.0
+      },
+      "worker_transfers": 1.0,
+      "payload_bytes": 484442112.0,
+      "decode_ttft_median_s": 0.05763266794383526,
+      "duplicate_transfers": null,
+      "unique_destination_gpu_blocks": null,
+      "trace_note": "Use per-rank READ traces for block/duplicate attribution; telemetry counts alone do not prove duplicate prefixes."
+    },
+    {
+      "group_id": "grpo-cde95d4ce94842c1aa22b931bb5f73f0",
+      "group_index": 4,
+      "phase": "measurement",
+      "successful_requests": 1,
+      "errors": [],
+      "requests": [
+        {
+          "request_id": "grpo-cde95d4ce94842c1aa22b931bb5f73f0-0",
+          "decode_ttft_s": 0.060187996830791235,
+          "end_to_end_ttft_s": 0.10156337590888143,
+          "decode_elapsed_s": 0.7384690209291875,
+          "usage": {
+            "prompt_tokens": 4097,
+            "total_tokens": 4129,
+            "completion_tokens": 32
+          },
+          "text": " Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss"
+        }
+      ],
+      "decode_metrics_delta": {
+        "vllm:nixl_bytes_transferred_count": 1.0,
+        "vllm:nixl_bytes_transferred_sum": 484442112.0,
+        "vllm:nixl_num_failed_transfers_total": 0.0,
+        "vllm:nixl_num_kv_expired_reqs_total": 0.0
+      },
+      "prefill_metrics_delta": {
+        "vllm:nixl_bytes_transferred_count": 0.0,
+        "vllm:nixl_bytes_transferred_sum": 0.0,
+        "vllm:nixl_num_failed_transfers_total": 0.0,
+        "vllm:nixl_num_kv_expired_reqs_total": 0.0
+      },
+      "worker_transfers": 1.0,
+      "payload_bytes": 484442112.0,
+      "decode_ttft_median_s": 0.060187996830791235,
+      "duplicate_transfers": null,
+      "unique_destination_gpu_blocks": null,
+      "trace_note": "Use per-rank READ traces for block/duplicate attribution; telemetry counts alone do not prove duplicate prefixes."
+    },
+    {
+      "group_id": "grpo-0651d0c812014bea92637bec96c5fb95",
+      "group_index": 5,
+      "phase": "measurement",
+      "successful_requests": 1,
+      "errors": [],
+      "requests": [
+        {
+          "request_id": "grpo-0651d0c812014bea92637bec96c5fb95-0",
+          "decode_ttft_s": 0.07508960412815213,
+          "end_to_end_ttft_s": 0.3216707119718194,
+          "decode_elapsed_s": 0.9343217851128429,
+          "usage": {
+            "prompt_tokens": 4097,
+            "total_tokens": 4129,
+            "completion_tokens": 32
+          },
+          "text": " Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss"
+        }
+      ],
+      "decode_metrics_delta": {
+        "vllm:nixl_bytes_transferred_count": 1.0,
+        "vllm:nixl_bytes_transferred_sum": 484442112.0,
+        "vllm:nixl_num_failed_transfers_total": 0.0,
+        "vllm:nixl_num_kv_expired_reqs_total": 0.0
+      },
+      "prefill_metrics_delta": {
+        "vllm:nixl_bytes_transferred_count": 0.0,
+        "vllm:nixl_bytes_transferred_sum": 0.0,
+        "vllm:nixl_num_failed_transfers_total": 0.0,
+        "vllm:nixl_num_kv_expired_reqs_total": 0.0
+      },
+      "worker_transfers": 1.0,
+      "payload_bytes": 484442112.0,
+      "decode_ttft_median_s": 0.07508960412815213,
+      "duplicate_transfers": null,
+      "unique_destination_gpu_blocks": null,
+      "trace_note": "Use per-rank READ traces for block/duplicate attribution; telemetry counts alone do not prove duplicate prefixes."
+    },
+    {
+      "group_id": "grpo-f5c910fc148842fdbb135c3ecc94dbd9",
+      "group_index": 6,
+      "phase": "measurement",
+      "successful_requests": 1,
+      "errors": [],
+      "requests": [
+        {
+          "request_id": "grpo-f5c910fc148842fdbb135c3ecc94dbd9-0",
+          "decode_ttft_s": 0.09081287495791912,
+          "end_to_end_ttft_s": 0.4156273959670216,
+          "decode_elapsed_s": 0.9050865389872342,
+          "usage": {
+            "prompt_tokens": 4097,
+            "total_tokens": 4129,
+            "completion_tokens": 32
+          },
+          "text": " Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss"
+        }
+      ],
+      "decode_metrics_delta": {
+        "vllm:nixl_bytes_transferred_count": 1.0,
+        "vllm:nixl_bytes_transferred_sum": 484442112.0,
+        "vllm:nixl_num_failed_transfers_total": 0.0,
+        "vllm:nixl_num_kv_expired_reqs_total": 0.0
+      },
+      "prefill_metrics_delta": {
+        "vllm:nixl_bytes_transferred_count": 0.0,
+        "vllm:nixl_bytes_transferred_sum": 0.0,
+        "vllm:nixl_num_failed_transfers_total": 0.0,
+        "vllm:nixl_num_kv_expired_reqs_total": 0.0
+      },
+      "worker_transfers": 1.0,
+      "payload_bytes": 484442112.0,
+      "decode_ttft_median_s": 0.09081287495791912,
+      "duplicate_transfers": null,
+      "unique_destination_gpu_blocks": null,
+      "trace_note": "Use per-rank READ traces for block/duplicate attribution; telemetry counts alone do not prove duplicate prefixes."
+    },
+    {
+      "group_id": "grpo-6fd3b9f551524a6590b82463f85f7e86",
+      "group_index": 7,
+      "phase": "measurement",
+      "successful_requests": 1,
+      "errors": [],
+      "requests": [
+        {
+          "request_id": "grpo-6fd3b9f551524a6590b82463f85f7e86-0",
+          "decode_ttft_s": 0.060217245016247034,
+          "end_to_end_ttft_s": 0.09382449300028384,
+          "decode_elapsed_s": 0.7800627681426704,
+          "usage": {
+            "prompt_tokens": 4097,
+            "total_tokens": 4129,
+            "completion_tokens": 32
+          },
+          "text": " Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss"
+        }
+      ],
+      "decode_metrics_delta": {
+        "vllm:nixl_bytes_transferred_count": 1.0,
+        "vllm:nixl_bytes_transferred_sum": 484442112.0,
+        "vllm:nixl_num_failed_transfers_total": 0.0,
+        "vllm:nixl_num_kv_expired_reqs_total": 0.0
+      },
+      "prefill_metrics_delta": {
+        "vllm:nixl_bytes_transferred_count": 0.0,
+        "vllm:nixl_bytes_transferred_sum": 0.0,
+        "vllm:nixl_num_failed_transfers_total": 0.0,
+        "vllm:nixl_num_kv_expired_reqs_total": 0.0
+      },
+      "worker_transfers": 1.0,
+      "payload_bytes": 484442112.0,
+      "decode_ttft_median_s": 0.060217245016247034,
+      "duplicate_transfers": null,
+      "unique_destination_gpu_blocks": null,
+      "trace_note": "Use per-rank READ traces for block/duplicate attribution; telemetry counts alone do not prove duplicate prefixes."
+    },
+    {
+      "group_id": "grpo-a7f2f83568c841d7b230714b18f86a1d",
+      "group_index": 8,
+      "phase": "measurement",
+      "successful_requests": 1,
+      "errors": [],
+      "requests": [
+        {
+          "request_id": "grpo-a7f2f83568c841d7b230714b18f86a1d-0",
+          "decode_ttft_s": 0.06104726088233292,
+          "end_to_end_ttft_s": 0.09701147000305355,
+          "decode_elapsed_s": 0.7714250988792628,
+          "usage": {
+            "prompt_tokens": 4097,
+            "total_tokens": 4129,
+            "completion_tokens": 32
+          },
+          "text": " Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss"
+        }
+      ],
+      "decode_metrics_delta": {
+        "vllm:nixl_bytes_transferred_count": 1.0,
+        "vllm:nixl_bytes_transferred_sum": 484442112.0,
+        "vllm:nixl_num_failed_transfers_total": 0.0,
+        "vllm:nixl_num_kv_expired_reqs_total": 0.0
+      },
+      "prefill_metrics_delta": {
+        "vllm:nixl_bytes_transferred_count": 0.0,
+        "vllm:nixl_bytes_transferred_sum": 0.0,
+        "vllm:nixl_num_failed_transfers_total": 0.0,
+        "vllm:nixl_num_kv_expired_reqs_total": 0.0
+      },
+      "worker_transfers": 1.0,
+      "payload_bytes": 484442112.0,
+      "decode_ttft_median_s": 0.06104726088233292,
+      "duplicate_transfers": null,
+      "unique_destination_gpu_blocks": null,
+      "trace_note": "Use per-rank READ traces for block/duplicate attribution; telemetry counts alone do not prove duplicate prefixes."
+    },
+    {
+      "group_id": "grpo-c4f8cd1e62af41d6864ee815255350fd",
+      "group_index": 9,
+      "phase": "measurement",
+      "successful_requests": 1,
+      "errors": [],
+      "requests": [
+        {
+          "request_id": "grpo-c4f8cd1e62af41d6864ee815255350fd-0",
+          "decode_ttft_s": 0.061064636101946235,
+          "end_to_end_ttft_s": 0.09578327718190849,
+          "decode_elapsed_s": 0.7505879369564354,
+          "usage": {
+            "prompt_tokens": 4097,
+            "total_tokens": 4129,
+            "completion_tokens": 32
+          },
+          "text": " Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss the evidence carefully.  Discuss"
+        }
+      ],
+      "decode_metrics_delta": {
+        "vllm:nixl_bytes_transferred_count": 1.0,
+        "vllm:nixl_bytes_transferred_sum": 484442112.0,
+        "vllm:nixl_num_failed_transfers_total": 0.0,
+        "vllm:nixl_num_kv_expired_reqs_total": 0.0
+      },
+      "prefill_metrics_delta": {
+        "vllm:nixl_bytes_transferred_count": 0.0,
+        "vllm:nixl_bytes_transferred_sum": 0.0,
+        "vllm:nixl_num_failed_transfers_total": 0.0,
+        "vllm:nixl_num_kv_expired_reqs_total": 0.0
+      },
+      "worker_transfers": 1.0,
+      "payload_bytes": 484442112.0,
+      "decode_ttft_median_s": 0.061064636101946235,
+      "duplicate_transfers": null,
+      "unique_destination_gpu_blocks": null,
+      "trace_note": "Use per-rank READ traces for block/duplicate attribution; telemetry counts alone do not prove duplicate prefixes."
+    }
+  ]
+}

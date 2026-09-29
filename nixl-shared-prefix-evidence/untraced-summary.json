@@ -1,0 +1,3191 @@
+{
+  "status": "passed",
+  "statistical_unit": "one independently salted sibling group",
+  "ttft_aggregation": "median and range across ten per-group request medians",
+  "destination_block_note": "Not measured without traces; do not infer from bytes",
+  "manifest": {
+    "source": "<WORKSPACE>/.research-cache/miles-sglang-vllm/worktrees/nixl-baseline",
+    "source_sha": "0af34418e99b972029b53130c9a9665b4e692536",
+    "source_dirty": false,
+    "model": "<USER_PROJECTS>/hf_model_cache/hub/models--Qwen--Qwen3-0.6B/snapshots/c1899de289a04d12100db370d81485cdf75e47ca",
+    "trace": false,
+    "measurement_groups_per_case": 10,
+    "warmup_groups_per_case": 2,
+    "prefill_mode": "parallel",
+    "kv_extra": {},
+    "attention_config": {
+      "backend": "FLASH_ATTN",
+      "flash_attn_version": 2
+    },
+    "flashinfer_sampler": false,
+    "python": "<WORKSPACE>/research/miles-sglang-vllm/implementation/environment/.venv/bin/python",
+    "slurm_job_id": "7531249",
+    "ports": {
+      "api": [
+        33411,
+        40977
+      ],
+      "nixl_side_channel": [
+        54643,
+        26891
+      ],
+      "internal": [
+        9899,
+        33263
+      ]
+    }
+  },
+  "cases": [
+    {
+      "case": "tokens-4096-n-1",
+      "prompt_tokens": 4096,
+      "siblings": 1,
+      "measured_groups": 10,
+      "excluded_warmup_groups": 2,
+      "successful_measured_requests": 10,
+      "transfers_per_group": {
+        "1.0": 10
+      },
+      "decode_local_prefix_hit_tokens_per_group": {
+        "0.0": 10
+      },
+      "payload_MiB_per_group": {
+        "n": 10,
+        "median": 448.0,
+        "min": 448.0,
+        "max": 448.0,
+        "values": [
+          448.0,
+          448.0,
+          448.0,
+          448.0,
+          448.0,
+          448.0,
+          448.0,
+          448.0,
+          448.0,
+          448.0
+        ]
+      },
+      "group_median_d_ttft_ms": {
+        "n": 10,
+        "median": 69.48899349663407,
+        "min": 66.68931199237704,
+        "max": 71.7185940593481,
+        "values": [
+          70.42268989607692,
+          66.68931199237704,
+          70.49891515634954,
+          68.51942604407668,
+          68.50422499701381,
+          70.33286616206169,
+          68.64512083120644,
+          71.2202899158001,
+          68.46147309988737,
+          71.7185940593481
+        ]
+      },
+      "group_median_e2e_ttft_ms": {
+        "n": 10,
+        "median": 115.38992752321064,
+        "min": 111.82274296879768,
+        "max": 123.94725997000933,
+        "values": [
+          112.01109387911856,
+          118.84338594973087,
+          111.82274296879768,
+          123.94725997000933,
+          118.08085697703063,
+          115.2090469840914,
+          115.0699439458549,
+          112.73598996922374,
+          118.02712897770107,
+          115.57080806232989
+        ]
+      },
+      "producer_common_prefix_blocks_per_group": {
+        "None": 10
+      },
+      "unique_destination_blocks": null,
+      "peak_live_destination_blocks": null,
+      "groups": [
+        {
+          "group_id": "grpo-f025cadcd7f54e95a8ae7f3ab200338b",
+          "successful_requests": 1,
+          "transfers": 1.0,
+          "payload_bytes": 469762048.0,
+          "payload_MiB": 448.0,
+          "decode_local_prefix_hit_tokens": 0.0,
+          "d_ttft_median_ms": 70.42268989607692,
+          "e2e_ttft_median_ms": 112.01109387911856,
+          "d_ttft_per_request_ms": [
+            70.42268989607692
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 1,
+            "all_siblings_common_full_prefix_blocks": null,
+            "offered_source_block_occurrences": 32,
+            "unique_offered_source_blocks": 32,
+            "repeated_offered_source_blocks": 0,
+            "producer_cached_tokens": [
+              0
+            ],
+            "remote_block_size_fields": [
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        },
+        {
+          "group_id": "grpo-23067d208ea74a0f815da11d2f6c29e3",
+          "successful_requests": 1,
+          "transfers": 1.0,
+          "payload_bytes": 469762048.0,
+          "payload_MiB": 448.0,
+          "decode_local_prefix_hit_tokens": 0.0,
+          "d_ttft_median_ms": 66.68931199237704,
+          "e2e_ttft_median_ms": 118.84338594973087,
+          "d_ttft_per_request_ms": [
+            66.68931199237704
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 1,
+            "all_siblings_common_full_prefix_blocks": null,
+            "offered_source_block_occurrences": 32,
+            "unique_offered_source_blocks": 32,
+            "repeated_offered_source_blocks": 0,
+            "producer_cached_tokens": [
+              0
+            ],
+            "remote_block_size_fields": [
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        },
+        {
+          "group_id": "grpo-ca878c2f31af45d3848124739ecbac81",
+          "successful_requests": 1,
+          "transfers": 1.0,
+          "payload_bytes": 469762048.0,
+          "payload_MiB": 448.0,
+          "decode_local_prefix_hit_tokens": 0.0,
+          "d_ttft_median_ms": 70.49891515634954,
+          "e2e_ttft_median_ms": 111.82274296879768,
+          "d_ttft_per_request_ms": [
+            70.49891515634954
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 1,
+            "all_siblings_common_full_prefix_blocks": null,
+            "offered_source_block_occurrences": 32,
+            "unique_offered_source_blocks": 32,
+            "repeated_offered_source_blocks": 0,
+            "producer_cached_tokens": [
+              0
+            ],
+            "remote_block_size_fields": [
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        },
+        {
+          "group_id": "grpo-88c2535e27f24c329c737acc8f2172ba",
+          "successful_requests": 1,
+          "transfers": 1.0,
+          "payload_bytes": 469762048.0,
+          "payload_MiB": 448.0,
+          "decode_local_prefix_hit_tokens": 0.0,
+          "d_ttft_median_ms": 68.51942604407668,
+          "e2e_ttft_median_ms": 123.94725997000933,
+          "d_ttft_per_request_ms": [
+            68.51942604407668
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 1,
+            "all_siblings_common_full_prefix_blocks": null,
+            "offered_source_block_occurrences": 32,
+            "unique_offered_source_blocks": 32,
+            "repeated_offered_source_blocks": 0,
+            "producer_cached_tokens": [
+              0
+            ],
+            "remote_block_size_fields": [
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        },
+        {
+          "group_id": "grpo-bd61044b27fe4cdba702572a592f9056",
+          "successful_requests": 1,
+          "transfers": 1.0,
+          "payload_bytes": 469762048.0,
+          "payload_MiB": 448.0,
+          "decode_local_prefix_hit_tokens": 0.0,
+          "d_ttft_median_ms": 68.50422499701381,
+          "e2e_ttft_median_ms": 118.08085697703063,
+          "d_ttft_per_request_ms": [
+            68.50422499701381
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 1,
+            "all_siblings_common_full_prefix_blocks": null,
+            "offered_source_block_occurrences": 32,
+            "unique_offered_source_blocks": 32,
+            "repeated_offered_source_blocks": 0,
+            "producer_cached_tokens": [
+              0
+            ],
+            "remote_block_size_fields": [
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        },
+        {
+          "group_id": "grpo-7ba561e7a0474390b636f75dd052c337",
+          "successful_requests": 1,
+          "transfers": 1.0,
+          "payload_bytes": 469762048.0,
+          "payload_MiB": 448.0,
+          "decode_local_prefix_hit_tokens": 0.0,
+          "d_ttft_median_ms": 70.33286616206169,
+          "e2e_ttft_median_ms": 115.2090469840914,
+          "d_ttft_per_request_ms": [
+            70.33286616206169
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 1,
+            "all_siblings_common_full_prefix_blocks": null,
+            "offered_source_block_occurrences": 32,
+            "unique_offered_source_blocks": 32,
+            "repeated_offered_source_blocks": 0,
+            "producer_cached_tokens": [
+              0
+            ],
+            "remote_block_size_fields": [
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        },
+        {
+          "group_id": "grpo-80f0644c2253455492cba403cc7f4b8a",
+          "successful_requests": 1,
+          "transfers": 1.0,
+          "payload_bytes": 469762048.0,
+          "payload_MiB": 448.0,
+          "decode_local_prefix_hit_tokens": 0.0,
+          "d_ttft_median_ms": 68.64512083120644,
+          "e2e_ttft_median_ms": 115.0699439458549,
+          "d_ttft_per_request_ms": [
+            68.64512083120644
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 1,
+            "all_siblings_common_full_prefix_blocks": null,
+            "offered_source_block_occurrences": 32,
+            "unique_offered_source_blocks": 32,
+            "repeated_offered_source_blocks": 0,
+            "producer_cached_tokens": [
+              0
+            ],
+            "remote_block_size_fields": [
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        },
+        {
+          "group_id": "grpo-a67e1ebda7fd49bdb3ada1aa8500cee2",
+          "successful_requests": 1,
+          "transfers": 1.0,
+          "payload_bytes": 469762048.0,
+          "payload_MiB": 448.0,
+          "decode_local_prefix_hit_tokens": 0.0,
+          "d_ttft_median_ms": 71.2202899158001,
+          "e2e_ttft_median_ms": 112.73598996922374,
+          "d_ttft_per_request_ms": [
+            71.2202899158001
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 1,
+            "all_siblings_common_full_prefix_blocks": null,
+            "offered_source_block_occurrences": 32,
+            "unique_offered_source_blocks": 32,
+            "repeated_offered_source_blocks": 0,
+            "producer_cached_tokens": [
+              0
+            ],
+            "remote_block_size_fields": [
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        },
+        {
+          "group_id": "grpo-33f0cc4b3193460ab6f8f2b76658145b",
+          "successful_requests": 1,
+          "transfers": 1.0,
+          "payload_bytes": 469762048.0,
+          "payload_MiB": 448.0,
+          "decode_local_prefix_hit_tokens": 0.0,
+          "d_ttft_median_ms": 68.46147309988737,
+          "e2e_ttft_median_ms": 118.02712897770107,
+          "d_ttft_per_request_ms": [
+            68.46147309988737
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 1,
+            "all_siblings_common_full_prefix_blocks": null,
+            "offered_source_block_occurrences": 32,
+            "unique_offered_source_blocks": 32,
+            "repeated_offered_source_blocks": 0,
+            "producer_cached_tokens": [
+              0
+            ],
+            "remote_block_size_fields": [
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        },
+        {
+          "group_id": "grpo-2969d42ad6e04ae79876d31ea41915c6",
+          "successful_requests": 1,
+          "transfers": 1.0,
+          "payload_bytes": 469762048.0,
+          "payload_MiB": 448.0,
+          "decode_local_prefix_hit_tokens": 0.0,
+          "d_ttft_median_ms": 71.7185940593481,
+          "e2e_ttft_median_ms": 115.57080806232989,
+          "d_ttft_per_request_ms": [
+            71.7185940593481
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 1,
+            "all_siblings_common_full_prefix_blocks": null,
+            "offered_source_block_occurrences": 32,
+            "unique_offered_source_blocks": 32,
+            "repeated_offered_source_blocks": 0,
+            "producer_cached_tokens": [
+              0
+            ],
+            "remote_block_size_fields": [
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        }
+      ]
+    },
+    {
+      "case": "tokens-4096-n-4",
+      "prompt_tokens": 4096,
+      "siblings": 4,
+      "measured_groups": 10,
+      "excluded_warmup_groups": 2,
+      "successful_measured_requests": 40,
+      "transfers_per_group": {
+        "4.0": 10
+      },
+      "decode_local_prefix_hit_tokens_per_group": {
+        "0.0": 10
+      },
+      "payload_MiB_per_group": {
+        "n": 10,
+        "median": 1792.0,
+        "min": 1792.0,
+        "max": 1792.0,
+        "values": [
+          1792.0,
+          1792.0,
+          1792.0,
+          1792.0,
+          1792.0,
+          1792.0,
+          1792.0,
+          1792.0,
+          1792.0,
+          1792.0
+        ]
+      },
+      "group_median_d_ttft_ms": {
+        "n": 10,
+        "median": 105.82965903449804,
+        "min": 102.24451310932636,
+        "max": 109.32613199111074,
+        "values": [
+          104.84785900916904,
+          103.59195398632437,
+          106.10560304485261,
+          104.96621101628989,
+          107.0723389275372,
+          102.24451310932636,
+          106.85520339757204,
+          109.32613199111074,
+          105.55371502414346,
+          106.42688348889351
+        ]
+      },
+      "group_median_e2e_ttft_ms": {
+        "n": 10,
+        "median": 192.72114051273093,
+        "min": 159.32660445105284,
+        "max": 200.06065594498068,
+        "values": [
+          194.37129399739206,
+          200.06065594498068,
+          159.32660445105284,
+          192.70993303507566,
+          183.07610391639173,
+          198.61504004802555,
+          182.95343196950853,
+          192.7323479903862,
+          195.40910213254392,
+          183.55970398988575
+        ]
+      },
+      "producer_common_prefix_blocks_per_group": {
+        "31": 10
+      },
+      "unique_destination_blocks": null,
+      "peak_live_destination_blocks": null,
+      "groups": [
+        {
+          "group_id": "grpo-6ce91572b24541578123bd79f47d0afe",
+          "successful_requests": 4,
+          "transfers": 4.0,
+          "payload_bytes": 1879048192.0,
+          "payload_MiB": 1792.0,
+          "decode_local_prefix_hit_tokens": 0.0,
+          "d_ttft_median_ms": 104.84785900916904,
+          "e2e_ttft_median_ms": 194.37129399739206,
+          "d_ttft_per_request_ms": [
+            75.75721992179751,
+            105.13230692595243,
+            104.56341109238565,
+            131.75516808405519
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 4,
+            "all_siblings_common_full_prefix_blocks": 31,
+            "offered_source_block_occurrences": 128,
+            "unique_offered_source_blocks": 35,
+            "repeated_offered_source_blocks": 93,
+            "producer_cached_tokens": [
+              0,
+              3968,
+              3968,
+              3968
+            ],
+            "remote_block_size_fields": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        },
+        {
+          "group_id": "grpo-899d6da5638a45b59fd98aff583d3e29",
+          "successful_requests": 4,
+          "transfers": 4.0,
+          "payload_bytes": 1879048192.0,
+          "payload_MiB": 1792.0,
+          "decode_local_prefix_hit_tokens": 0.0,
+          "d_ttft_median_ms": 103.59195398632437,
+          "e2e_ttft_median_ms": 200.06065594498068,
+          "d_ttft_per_request_ms": [
+            74.1973789408803,
+            103.83259411901236,
+            103.35131385363638,
+            130.38313505239785
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 4,
+            "all_siblings_common_full_prefix_blocks": 31,
+            "offered_source_block_occurrences": 128,
+            "unique_offered_source_blocks": 35,
+            "repeated_offered_source_blocks": 93,
+            "producer_cached_tokens": [
+              0,
+              3968,
+              3968,
+              3968
+            ],
+            "remote_block_size_fields": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        },
+        {
+          "group_id": "grpo-985aeced7a1b4d2da8408fbead25ae64",
+          "successful_requests": 4,
+          "transfers": 4.0,
+          "payload_bytes": 1879048192.0,
+          "payload_MiB": 1792.0,
+          "decode_local_prefix_hit_tokens": 0.0,
+          "d_ttft_median_ms": 106.10560304485261,
+          "e2e_ttft_median_ms": 159.32660445105284,
+          "d_ttft_per_request_ms": [
+            76.53946103528142,
+            106.35374812409282,
+            105.85745796561241,
+            133.12543998472393
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 4,
+            "all_siblings_common_full_prefix_blocks": 31,
+            "offered_source_block_occurrences": 128,
+            "unique_offered_source_blocks": 35,
+            "repeated_offered_source_blocks": 93,
+            "producer_cached_tokens": [
+              0,
+              3968,
+              3968,
+              3968
+            ],
+            "remote_block_size_fields": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        },
+        {
+          "group_id": "grpo-fe00ed93932246c68c42a1a3629df428",
+          "successful_requests": 4,
+          "transfers": 4.0,
+          "payload_bytes": 1879048192.0,
+          "payload_MiB": 1792.0,
+          "decode_local_prefix_hit_tokens": 0.0,
+          "d_ttft_median_ms": 104.96621101628989,
+          "e2e_ttft_median_ms": 192.70993303507566,
+          "d_ttft_per_request_ms": [
+            75.47206804156303,
+            105.05749098956585,
+            104.87493104301393,
+            131.88614300452173
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 4,
+            "all_siblings_common_full_prefix_blocks": 31,
+            "offered_source_block_occurrences": 128,
+            "unique_offered_source_blocks": 35,
+            "repeated_offered_source_blocks": 93,
+            "producer_cached_tokens": [
+              0,
+              3968,
+              3968,
+              3968
+            ],
+            "remote_block_size_fields": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        },
+        {
+          "group_id": "grpo-4d8226b8c8f64f37994e527284814f81",
+          "successful_requests": 4,
+          "transfers": 4.0,
+          "payload_bytes": 1879048192.0,
+          "payload_MiB": 1792.0,
+          "decode_local_prefix_hit_tokens": 0.0,
+          "d_ttft_median_ms": 107.0723389275372,
+          "e2e_ttft_median_ms": 183.07610391639173,
+          "d_ttft_per_request_ms": [
+            76.9497009459883,
+            107.171346899122,
+            106.9733309559524,
+            134.69481701031327
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 4,
+            "all_siblings_common_full_prefix_blocks": 31,
+            "offered_source_block_occurrences": 128,
+            "unique_offered_source_blocks": 35,
+            "repeated_offered_source_blocks": 93,
+            "producer_cached_tokens": [
+              0,
+              3968,
+              3968,
+              3968
+            ],
+            "remote_block_size_fields": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        },
+        {
+          "group_id": "grpo-27329db07840411b8d2f17bec32dbcd1",
+          "successful_requests": 4,
+          "transfers": 4.0,
+          "payload_bytes": 1879048192.0,
+          "payload_MiB": 1792.0,
+          "decode_local_prefix_hit_tokens": 0.0,
+          "d_ttft_median_ms": 102.24451310932636,
+          "e2e_ttft_median_ms": 198.61504004802555,
+          "d_ttft_per_request_ms": [
+            72.50429107807577,
+            102.45291306637228,
+            102.03611315228045,
+            129.45494195446372
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 4,
+            "all_siblings_common_full_prefix_blocks": 31,
+            "offered_source_block_occurrences": 128,
+            "unique_offered_source_blocks": 35,
+            "repeated_offered_source_blocks": 93,
+            "producer_cached_tokens": [
+              0,
+              3968,
+              3968,
+              3968
+            ],
+            "remote_block_size_fields": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        },
+        {
+          "group_id": "grpo-fd8959ad246f4cc5b411f93a3e3ea626",
+          "successful_requests": 4,
+          "transfers": 4.0,
+          "payload_bytes": 1879048192.0,
+          "payload_MiB": 1792.0,
+          "decode_local_prefix_hit_tokens": 0.0,
+          "d_ttft_median_ms": 106.85520339757204,
+          "e2e_ttft_median_ms": 182.95343196950853,
+          "d_ttft_per_request_ms": [
+            76.51613303460181,
+            106.98139597661793,
+            106.72901081852615,
+            134.17574390769005
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 4,
+            "all_siblings_common_full_prefix_blocks": 31,
+            "offered_source_block_occurrences": 128,
+            "unique_offered_source_blocks": 35,
+            "repeated_offered_source_blocks": 93,
+            "producer_cached_tokens": [
+              0,
+              3968,
+              3968,
+              3968
+            ],
+            "remote_block_size_fields": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        },
+        {
+          "group_id": "grpo-e2fd4d4a10c94801baecc4751f72ce6d",
+          "successful_requests": 4,
+          "transfers": 4.0,
+          "payload_bytes": 1879048192.0,
+          "payload_MiB": 1792.0,
+          "decode_local_prefix_hit_tokens": 0.0,
+          "d_ttft_median_ms": 109.32613199111074,
+          "e2e_ttft_median_ms": 192.7323479903862,
+          "d_ttft_per_request_ms": [
+            78.48381390795112,
+            109.53339608386159,
+            109.1188678983599,
+            137.04611407592893
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 4,
+            "all_siblings_common_full_prefix_blocks": 31,
+            "offered_source_block_occurrences": 128,
+            "unique_offered_source_blocks": 35,
+            "repeated_offered_source_blocks": 93,
+            "producer_cached_tokens": [
+              0,
+              3968,
+              3968,
+              3968
+            ],
+            "remote_block_size_fields": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        },
+        {
+          "group_id": "grpo-369e0b0bb3ac41d9bab4870e4ad1be96",
+          "successful_requests": 4,
+          "transfers": 4.0,
+          "payload_bytes": 1879048192.0,
+          "payload_MiB": 1792.0,
+          "decode_local_prefix_hit_tokens": 0.0,
+          "d_ttft_median_ms": 105.55371502414346,
+          "e2e_ttft_median_ms": 195.40910213254392,
+          "d_ttft_per_request_ms": [
+            76.04825985617936,
+            105.6738430634141,
+            105.43358698487282,
+            132.39033613353968
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 4,
+            "all_siblings_common_full_prefix_blocks": 31,
+            "offered_source_block_occurrences": 128,
+            "unique_offered_source_blocks": 35,
+            "repeated_offered_source_blocks": 93,
+            "producer_cached_tokens": [
+              0,
+              3968,
+              3968,
+              3968
+            ],
+            "remote_block_size_fields": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        },
+        {
+          "group_id": "grpo-b26a72bbc6254a518660304adb40bb92",
+          "successful_requests": 4,
+          "transfers": 4.0,
+          "payload_bytes": 1879048192.0,
+          "payload_MiB": 1792.0,
+          "decode_local_prefix_hit_tokens": 0.0,
+          "d_ttft_median_ms": 106.42688348889351,
+          "e2e_ttft_median_ms": 183.55970398988575,
+          "d_ttft_per_request_ms": [
+            76.64947700686753,
+            106.64485208690166,
+            106.20891489088535,
+            133.43212800100446
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 4,
+            "all_siblings_common_full_prefix_blocks": 31,
+            "offered_source_block_occurrences": 128,
+            "unique_offered_source_blocks": 35,
+            "repeated_offered_source_blocks": 93,
+            "producer_cached_tokens": [
+              0,
+              3968,
+              3968,
+              3968
+            ],
+            "remote_block_size_fields": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        }
+      ]
+    },
+    {
+      "case": "tokens-4096-n-8",
+      "prompt_tokens": 4096,
+      "siblings": 8,
+      "measured_groups": 10,
+      "excluded_warmup_groups": 2,
+      "successful_measured_requests": 80,
+      "transfers_per_group": {
+        "8.0": 10
+      },
+      "decode_local_prefix_hit_tokens_per_group": {
+        "27776.0": 10
+      },
+      "payload_MiB_per_group": {
+        "n": 10,
+        "median": 546.0,
+        "min": 546.0,
+        "max": 546.0,
+        "values": [
+          546.0,
+          546.0,
+          546.0,
+          546.0,
+          546.0,
+          546.0,
+          546.0,
+          546.0,
+          546.0,
+          546.0
+        ]
+      },
+      "group_median_d_ttft_ms": {
+        "n": 10,
+        "median": 141.99886802816764,
+        "min": 139.5182100823149,
+        "max": 143.8308045035228,
+        "values": [
+          143.31544504966587,
+          143.3491880306974,
+          140.30297892168164,
+          142.27645157370716,
+          140.8559229457751,
+          143.8308045035228,
+          141.84106001630425,
+          141.08833845239133,
+          142.15667604003102,
+          139.5182100823149
+        ]
+      },
+      "group_median_e2e_ttft_ms": {
+        "n": 10,
+        "median": 213.56570173520595,
+        "min": 209.95481905993074,
+        "max": 217.18136791605502,
+        "values": [
+          213.33293395582587,
+          214.97109497431666,
+          211.61106089130044,
+          213.79846951458603,
+          211.88184502534568,
+          216.2812389433384,
+          217.18136791605502,
+          210.75667603872716,
+          215.64597450196743,
+          209.95481905993074
+        ]
+      },
+      "producer_common_prefix_blocks_per_group": {
+        "31": 10
+      },
+      "unique_destination_blocks": null,
+      "peak_live_destination_blocks": null,
+      "groups": [
+        {
+          "group_id": "grpo-2f5506ff4bd6437c8472ede0924eceee",
+          "successful_requests": 8,
+          "transfers": 8.0,
+          "payload_bytes": 572522496.0,
+          "payload_MiB": 546.0,
+          "decode_local_prefix_hit_tokens": 27776.0,
+          "d_ttft_median_ms": 143.31544504966587,
+          "e2e_ttft_median_ms": 213.33293395582587,
+          "d_ttft_per_request_ms": [
+            66.28108699806035,
+            144.5529970806092,
+            144.24016512930393,
+            144.05370084568858,
+            143.6001651454717,
+            143.03072495386004,
+            142.76041998527944,
+            142.2471720725298
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 8,
+            "all_siblings_common_full_prefix_blocks": 31,
+            "offered_source_block_occurrences": 256,
+            "unique_offered_source_blocks": 39,
+            "repeated_offered_source_blocks": 217,
+            "producer_cached_tokens": [
+              0,
+              3968,
+              3968,
+              3968,
+              3968,
+              3968,
+              3968,
+              3968
+            ],
+            "remote_block_size_fields": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        },
+        {
+          "group_id": "grpo-f1016165a6ca49afad3718ff82d09fa0",
+          "successful_requests": 8,
+          "transfers": 8.0,
+          "payload_bytes": 572522496.0,
+          "payload_MiB": 546.0,
+          "decode_local_prefix_hit_tokens": 27776.0,
+          "d_ttft_median_ms": 143.3491880306974,
+          "e2e_ttft_median_ms": 214.97109497431666,
+          "d_ttft_per_request_ms": [
+            67.19545600935817,
+            144.75373295135796,
+            143.99750903248787,
+            143.73626094311476,
+            143.4836199041456,
+            143.2147561572492,
+            143.04710808210075,
+            142.59869186207652
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 8,
+            "all_siblings_common_full_prefix_blocks": 31,
+            "offered_source_block_occurrences": 256,
+            "unique_offered_source_blocks": 39,
+            "repeated_offered_source_blocks": 217,
+            "producer_cached_tokens": [
+              0,
+              3968,
+              3968,
+              3968,
+              3968,
+              3968,
+              3968,
+              3968
+            ],
+            "remote_block_size_fields": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        },
+        {
+          "group_id": "grpo-8e0c06f306264be5943ed8f0350e6c1f",
+          "successful_requests": 8,
+          "transfers": 8.0,
+          "payload_bytes": 572522496.0,
+          "payload_MiB": 546.0,
+          "decode_local_prefix_hit_tokens": 27776.0,
+          "d_ttft_median_ms": 140.30297892168164,
+          "e2e_ttft_median_ms": 211.61106089130044,
+          "d_ttft_per_request_ms": [
+            64.9969910737127,
+            141.67830697260797,
+            141.1211551167071,
+            140.84262703545392,
+            140.55453101173043,
+            139.94749099947512,
+            140.05142683163285,
+            139.80444986373186
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 8,
+            "all_siblings_common_full_prefix_blocks": 31,
+            "offered_source_block_occurrences": 256,
+            "unique_offered_source_blocks": 39,
+            "repeated_offered_source_blocks": 217,
+            "producer_cached_tokens": [
+              0,
+              3968,
+              3968,
+              3968,
+              3968,
+              3968,
+              3968,
+              3968
+            ],
+            "remote_block_size_fields": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        },
+        {
+          "group_id": "grpo-b83cc37d3b124608a499770e70aa5d72",
+          "successful_requests": 8,
+          "transfers": 8.0,
+          "payload_bytes": 572522496.0,
+          "payload_MiB": 546.0,
+          "decode_local_prefix_hit_tokens": 27776.0,
+          "d_ttft_median_ms": 142.27645157370716,
+          "e2e_ttft_median_ms": 213.79846951458603,
+          "d_ttft_per_request_ms": [
+            66.5099190082401,
+            143.4259880334139,
+            143.1195877958089,
+            142.82794017344713,
+            142.58691621944308,
+            141.91878703422844,
+            141.96598692797124,
+            141.52035489678383
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 8,
+            "all_siblings_common_full_prefix_blocks": 31,
+            "offered_source_block_occurrences": 256,
+            "unique_offered_source_blocks": 39,
+            "repeated_offered_source_blocks": 217,
+            "producer_cached_tokens": [
+              0,
+              3968,
+              3968,
+              3968,
+              3968,
+              3968,
+              3968,
+              3968
+            ],
+            "remote_block_size_fields": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        },
+        {
+          "group_id": "grpo-f1e6775776e34edf8c018b554aa6a3ea",
+          "successful_requests": 8,
+          "transfers": 8.0,
+          "payload_bytes": 572522496.0,
+          "payload_MiB": 546.0,
+          "decode_local_prefix_hit_tokens": 27776.0,
+          "d_ttft_median_ms": 140.8559229457751,
+          "e2e_ttft_median_ms": 211.88184502534568,
+          "d_ttft_per_request_ms": [
+            65.15881512314081,
+            141.9784678146243,
+            141.67561917565763,
+            141.37325109913945,
+            140.79853100702167,
+            140.91331488452852,
+            140.41216298937798,
+            140.13856300152838
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 8,
+            "all_siblings_common_full_prefix_blocks": 31,
+            "offered_source_block_occurrences": 256,
+            "unique_offered_source_blocks": 39,
+            "repeated_offered_source_blocks": 217,
+            "producer_cached_tokens": [
+              0,
+              3968,
+              3968,
+              3968,
+              3968,
+              3968,
+              3968,
+              3968
+            ],
+            "remote_block_size_fields": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        },
+        {
+          "group_id": "grpo-24249e803fde44f0a5968fc5af133a51",
+          "successful_requests": 8,
+          "transfers": 8.0,
+          "payload_bytes": 572522496.0,
+          "payload_MiB": 546.0,
+          "decode_local_prefix_hit_tokens": 27776.0,
+          "d_ttft_median_ms": 143.8308045035228,
+          "e2e_ttft_median_ms": 216.2812389433384,
+          "d_ttft_per_request_ms": [
+            67.15686386451125,
+            145.20243695005774,
+            145.0468848925084,
+            144.33869300410151,
+            144.06957291066647,
+            143.50339584052563,
+            143.59203609637916,
+            143.3990760706365
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 8,
+            "all_siblings_common_full_prefix_blocks": 31,
+            "offered_source_block_occurrences": 256,
+            "unique_offered_source_blocks": 39,
+            "repeated_offered_source_blocks": 217,
+            "producer_cached_tokens": [
+              0,
+              3968,
+              3968,
+              3968,
+              3968,
+              3968,
+              3968,
+              3968
+            ],
+            "remote_block_size_fields": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        },
+        {
+          "group_id": "grpo-af9af3590f2045488aa0504fe8f512c3",
+          "successful_requests": 8,
+          "transfers": 8.0,
+          "payload_bytes": 572522496.0,
+          "payload_MiB": 546.0,
+          "decode_local_prefix_hit_tokens": 27776.0,
+          "d_ttft_median_ms": 141.84106001630425,
+          "e2e_ttft_median_ms": 217.18136791605502,
+          "d_ttft_per_request_ms": [
+            65.70192007347941,
+            143.02282012067735,
+            142.7030439954251,
+            142.46643614023924,
+            142.22256396897137,
+            141.45955606363714,
+            141.3999400101602,
+            140.7226580195129
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 8,
+            "all_siblings_common_full_prefix_blocks": 31,
+            "offered_source_block_occurrences": 256,
+            "unique_offered_source_blocks": 39,
+            "repeated_offered_source_blocks": 217,
+            "producer_cached_tokens": [
+              0,
+              3968,
+              3968,
+              3968,
+              3968,
+              3968,
+              3968,
+              3968
+            ],
+            "remote_block_size_fields": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        },
+        {
+          "group_id": "grpo-54166c88b9764cc7af14955bcd02af82",
+          "successful_requests": 8,
+          "transfers": 8.0,
+          "payload_bytes": 572522496.0,
+          "payload_MiB": 546.0,
+          "decode_local_prefix_hit_tokens": 27776.0,
+          "d_ttft_median_ms": 141.08833845239133,
+          "e2e_ttft_median_ms": 210.75667603872716,
+          "d_ttft_per_request_ms": [
+            64.82847803272307,
+            142.5054760184139,
+            142.08841999061406,
+            141.39709086157382,
+            141.2256029434502,
+            140.95107396133244,
+            140.50617790780962,
+            140.50589106045663
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 8,
+            "all_siblings_common_full_prefix_blocks": 31,
+            "offered_source_block_occurrences": 256,
+            "unique_offered_source_blocks": 39,
+            "repeated_offered_source_blocks": 217,
+            "producer_cached_tokens": [
+              0,
+              3968,
+              3968,
+              3968,
+              3968,
+              3968,
+              3968,
+              3968
+            ],
+            "remote_block_size_fields": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        },
+        {
+          "group_id": "grpo-c3c9dfc8efe04db7b16d3f6dffa145ac",
+          "successful_requests": 8,
+          "transfers": 8.0,
+          "payload_bytes": 572522496.0,
+          "payload_MiB": 546.0,
+          "decode_local_prefix_hit_tokens": 27776.0,
+          "d_ttft_median_ms": 142.15667604003102,
+          "e2e_ttft_median_ms": 215.64597450196743,
+          "d_ttft_per_request_ms": [
+            66.29353505559266,
+            143.5736680869013,
+            143.3227879460901,
+            143.0190762039274,
+            142.38678803667426,
+            141.92656404338777,
+            141.8930587824434,
+            141.73376304097474
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 8,
+            "all_siblings_common_full_prefix_blocks": 31,
+            "offered_source_block_occurrences": 256,
+            "unique_offered_source_blocks": 39,
+            "repeated_offered_source_blocks": 217,
+            "producer_cached_tokens": [
+              0,
+              3968,
+              3968,
+              3968,
+              3968,
+              3968,
+              3968,
+              3968
+            ],
+            "remote_block_size_fields": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        },
+        {
+          "group_id": "grpo-11ecf9abbc0f4321855eedd9c99455bf",
+          "successful_requests": 8,
+          "transfers": 8.0,
+          "payload_bytes": 572522496.0,
+          "payload_MiB": 546.0,
+          "decode_local_prefix_hit_tokens": 27776.0,
+          "d_ttft_median_ms": 139.5182100823149,
+          "e2e_ttft_median_ms": 209.95481905993074,
+          "d_ttft_per_request_ms": [
+            64.47459082119167,
+            140.6692499294877,
+            140.41677000932395,
+            140.25488193146884,
+            139.86601796932518,
+            139.17040219530463,
+            138.9834580477327,
+            138.80230486392975
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 8,
+            "all_siblings_common_full_prefix_blocks": 31,
+            "offered_source_block_occurrences": 256,
+            "unique_offered_source_blocks": 39,
+            "repeated_offered_source_blocks": 217,
+            "producer_cached_tokens": [
+              0,
+              3968,
+              3968,
+              3968,
+              3968,
+              3968,
+              3968,
+              3968
+            ],
+            "remote_block_size_fields": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        }
+      ]
+    },
+    {
+      "case": "tokens-4097-n-1",
+      "prompt_tokens": 4097,
+      "siblings": 1,
+      "measured_groups": 10,
+      "excluded_warmup_groups": 2,
+      "successful_measured_requests": 10,
+      "transfers_per_group": {
+        "1.0": 10
+      },
+      "decode_local_prefix_hit_tokens_per_group": {
+        "0.0": 10
+      },
+      "payload_MiB_per_group": {
+        "n": 10,
+        "median": 462.0,
+        "min": 462.0,
+        "max": 462.0,
+        "values": [
+          462.0,
+          462.0,
+          462.0,
+          462.0,
+          462.0,
+          462.0,
+          462.0,
+          462.0,
+          462.0,
+          462.0
+        ]
+      },
+      "group_median_d_ttft_ms": {
+        "n": 10,
+        "median": 60.202620923519135,
+        "min": 55.89413805864751,
+        "max": 90.81287495791912,
+        "values": [
+          55.89413805864751,
+          57.616858975961804,
+          60.14965986832976,
+          57.63266794383526,
+          60.187996830791235,
+          75.08960412815213,
+          90.81287495791912,
+          60.217245016247034,
+          61.04726088233292,
+          61.064636101946235
+        ]
+      },
+      "group_median_e2e_ttft_ms": {
+        "n": 10,
+        "median": 96.04844509158283,
+        "min": 87.7393689006567,
+        "max": 415.6273959670216,
+        "values": [
+          87.7393689006567,
+          94.81546888127923,
+          96.31361300125718,
+          91.38183505274355,
+          101.56337590888143,
+          321.6707119718194,
+          415.6273959670216,
+          93.82449300028384,
+          97.01147000305355,
+          95.78327718190849
+        ]
+      },
+      "producer_common_prefix_blocks_per_group": {
+        "None": 10
+      },
+      "unique_destination_blocks": null,
+      "peak_live_destination_blocks": null,
+      "groups": [
+        {
+          "group_id": "grpo-cfe5df83aaea4e04bf2f579adb37633a",
+          "successful_requests": 1,
+          "transfers": 1.0,
+          "payload_bytes": 484442112.0,
+          "payload_MiB": 462.0,
+          "decode_local_prefix_hit_tokens": 0.0,
+          "d_ttft_median_ms": 55.89413805864751,
+          "e2e_ttft_median_ms": 87.7393689006567,
+          "d_ttft_per_request_ms": [
+            55.89413805864751
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 1,
+            "all_siblings_common_full_prefix_blocks": null,
+            "offered_source_block_occurrences": 33,
+            "unique_offered_source_blocks": 33,
+            "repeated_offered_source_blocks": 0,
+            "producer_cached_tokens": [
+              0
+            ],
+            "remote_block_size_fields": [
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        },
+        {
+          "group_id": "grpo-2d646c93071d45d49f7bd10dd4f65f8d",
+          "successful_requests": 1,
+          "transfers": 1.0,
+          "payload_bytes": 484442112.0,
+          "payload_MiB": 462.0,
+          "decode_local_prefix_hit_tokens": 0.0,
+          "d_ttft_median_ms": 57.616858975961804,
+          "e2e_ttft_median_ms": 94.81546888127923,
+          "d_ttft_per_request_ms": [
+            57.616858975961804
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 1,
+            "all_siblings_common_full_prefix_blocks": null,
+            "offered_source_block_occurrences": 33,
+            "unique_offered_source_blocks": 33,
+            "repeated_offered_source_blocks": 0,
+            "producer_cached_tokens": [
+              0
+            ],
+            "remote_block_size_fields": [
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        },
+        {
+          "group_id": "grpo-7ab36a399746410fb98468e995a12089",
+          "successful_requests": 1,
+          "transfers": 1.0,
+          "payload_bytes": 484442112.0,
+          "payload_MiB": 462.0,
+          "decode_local_prefix_hit_tokens": 0.0,
+          "d_ttft_median_ms": 60.14965986832976,
+          "e2e_ttft_median_ms": 96.31361300125718,
+          "d_ttft_per_request_ms": [
+            60.14965986832976
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 1,
+            "all_siblings_common_full_prefix_blocks": null,
+            "offered_source_block_occurrences": 33,
+            "unique_offered_source_blocks": 33,
+            "repeated_offered_source_blocks": 0,
+            "producer_cached_tokens": [
+              0
+            ],
+            "remote_block_size_fields": [
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        },
+        {
+          "group_id": "grpo-bbadfb969fe746ffbbc3ce8b755dc531",
+          "successful_requests": 1,
+          "transfers": 1.0,
+          "payload_bytes": 484442112.0,
+          "payload_MiB": 462.0,
+          "decode_local_prefix_hit_tokens": 0.0,
+          "d_ttft_median_ms": 57.63266794383526,
+          "e2e_ttft_median_ms": 91.38183505274355,
+          "d_ttft_per_request_ms": [
+            57.63266794383526
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 1,
+            "all_siblings_common_full_prefix_blocks": null,
+            "offered_source_block_occurrences": 33,
+            "unique_offered_source_blocks": 33,
+            "repeated_offered_source_blocks": 0,
+            "producer_cached_tokens": [
+              0
+            ],
+            "remote_block_size_fields": [
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        },
+        {
+          "group_id": "grpo-cde95d4ce94842c1aa22b931bb5f73f0",
+          "successful_requests": 1,
+          "transfers": 1.0,
+          "payload_bytes": 484442112.0,
+          "payload_MiB": 462.0,
+          "decode_local_prefix_hit_tokens": 0.0,
+          "d_ttft_median_ms": 60.187996830791235,
+          "e2e_ttft_median_ms": 101.56337590888143,
+          "d_ttft_per_request_ms": [
+            60.187996830791235
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 1,
+            "all_siblings_common_full_prefix_blocks": null,
+            "offered_source_block_occurrences": 33,
+            "unique_offered_source_blocks": 33,
+            "repeated_offered_source_blocks": 0,
+            "producer_cached_tokens": [
+              0
+            ],
+            "remote_block_size_fields": [
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        },
+        {
+          "group_id": "grpo-0651d0c812014bea92637bec96c5fb95",
+          "successful_requests": 1,
+          "transfers": 1.0,
+          "payload_bytes": 484442112.0,
+          "payload_MiB": 462.0,
+          "decode_local_prefix_hit_tokens": 0.0,
+          "d_ttft_median_ms": 75.08960412815213,
+          "e2e_ttft_median_ms": 321.6707119718194,
+          "d_ttft_per_request_ms": [
+            75.08960412815213
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 1,
+            "all_siblings_common_full_prefix_blocks": null,
+            "offered_source_block_occurrences": 33,
+            "unique_offered_source_blocks": 33,
+            "repeated_offered_source_blocks": 0,
+            "producer_cached_tokens": [
+              0
+            ],
+            "remote_block_size_fields": [
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        },
+        {
+          "group_id": "grpo-f5c910fc148842fdbb135c3ecc94dbd9",
+          "successful_requests": 1,
+          "transfers": 1.0,
+          "payload_bytes": 484442112.0,
+          "payload_MiB": 462.0,
+          "decode_local_prefix_hit_tokens": 0.0,
+          "d_ttft_median_ms": 90.81287495791912,
+          "e2e_ttft_median_ms": 415.6273959670216,
+          "d_ttft_per_request_ms": [
+            90.81287495791912
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 1,
+            "all_siblings_common_full_prefix_blocks": null,
+            "offered_source_block_occurrences": 33,
+            "unique_offered_source_blocks": 33,
+            "repeated_offered_source_blocks": 0,
+            "producer_cached_tokens": [
+              0
+            ],
+            "remote_block_size_fields": [
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        },
+        {
+          "group_id": "grpo-6fd3b9f551524a6590b82463f85f7e86",
+          "successful_requests": 1,
+          "transfers": 1.0,
+          "payload_bytes": 484442112.0,
+          "payload_MiB": 462.0,
+          "decode_local_prefix_hit_tokens": 0.0,
+          "d_ttft_median_ms": 60.217245016247034,
+          "e2e_ttft_median_ms": 93.82449300028384,
+          "d_ttft_per_request_ms": [
+            60.217245016247034
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 1,
+            "all_siblings_common_full_prefix_blocks": null,
+            "offered_source_block_occurrences": 33,
+            "unique_offered_source_blocks": 33,
+            "repeated_offered_source_blocks": 0,
+            "producer_cached_tokens": [
+              0
+            ],
+            "remote_block_size_fields": [
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        },
+        {
+          "group_id": "grpo-a7f2f83568c841d7b230714b18f86a1d",
+          "successful_requests": 1,
+          "transfers": 1.0,
+          "payload_bytes": 484442112.0,
+          "payload_MiB": 462.0,
+          "decode_local_prefix_hit_tokens": 0.0,
+          "d_ttft_median_ms": 61.04726088233292,
+          "e2e_ttft_median_ms": 97.01147000305355,
+          "d_ttft_per_request_ms": [
+            61.04726088233292
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 1,
+            "all_siblings_common_full_prefix_blocks": null,
+            "offered_source_block_occurrences": 33,
+            "unique_offered_source_blocks": 33,
+            "repeated_offered_source_blocks": 0,
+            "producer_cached_tokens": [
+              0
+            ],
+            "remote_block_size_fields": [
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        },
+        {
+          "group_id": "grpo-c4f8cd1e62af41d6864ee815255350fd",
+          "successful_requests": 1,
+          "transfers": 1.0,
+          "payload_bytes": 484442112.0,
+          "payload_MiB": 462.0,
+          "decode_local_prefix_hit_tokens": 0.0,
+          "d_ttft_median_ms": 61.064636101946235,
+          "e2e_ttft_median_ms": 95.78327718190849,
+          "d_ttft_per_request_ms": [
+            61.064636101946235
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 1,
+            "all_siblings_common_full_prefix_blocks": null,
+            "offered_source_block_occurrences": 33,
+            "unique_offered_source_blocks": 33,
+            "repeated_offered_source_blocks": 0,
+            "producer_cached_tokens": [
+              0
+            ],
+            "remote_block_size_fields": [
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        }
+      ]
+    },
+    {
+      "case": "tokens-4097-n-4",
+      "prompt_tokens": 4097,
+      "siblings": 4,
+      "measured_groups": 10,
+      "excluded_warmup_groups": 2,
+      "successful_measured_requests": 40,
+      "transfers_per_group": {
+        "4.0": 10
+      },
+      "decode_local_prefix_hit_tokens_per_group": {
+        "0.0": 10
+      },
+      "payload_MiB_per_group": {
+        "n": 10,
+        "median": 1848.0,
+        "min": 1848.0,
+        "max": 1848.0,
+        "values": [
+          1848.0,
+          1848.0,
+          1848.0,
+          1848.0,
+          1848.0,
+          1848.0,
+          1848.0,
+          1848.0,
+          1848.0,
+          1848.0
+        ]
+      },
+      "group_median_d_ttft_ms": {
+        "n": 10,
+        "median": 77.60388473980129,
+        "min": 75.66473912447691,
+        "max": 87.73007290437818,
+        "values": [
+          77.56438851356506,
+          81.11768658272922,
+          87.73007290437818,
+          78.38397298473865,
+          77.64338096603751,
+          75.66473912447691,
+          77.41771603468806,
+          76.0709949536249,
+          77.18315650708973,
+          86.05476003140211
+        ]
+      },
+      "group_median_e2e_ttft_ms": {
+        "n": 10,
+        "median": 143.77645152853802,
+        "min": 140.79297799617052,
+        "max": 158.69007410947233,
+        "values": [
+          143.35453102830797,
+          146.14981249906123,
+          152.3275914369151,
+          144.19837202876806,
+          140.79297799617052,
+          141.0936820320785,
+          141.99081808328629,
+          141.02420990820974,
+          145.7807404221967,
+          158.69007410947233
+        ]
+      },
+      "producer_common_prefix_blocks_per_group": {
+        "32": 10
+      },
+      "unique_destination_blocks": null,
+      "peak_live_destination_blocks": null,
+      "groups": [
+        {
+          "group_id": "grpo-2fa2850019864ae8a877e312d8ca81d6",
+          "successful_requests": 4,
+          "transfers": 4.0,
+          "payload_bytes": 1937768448.0,
+          "payload_MiB": 1848.0,
+          "decode_local_prefix_hit_tokens": 0.0,
+          "d_ttft_median_ms": 77.56438851356506,
+          "e2e_ttft_median_ms": 143.35453102830797,
+          "d_ttft_per_request_ms": [
+            66.44150405190885,
+            65.92543888837099,
+            88.68727297522128,
+            111.75464396364987
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 4,
+            "all_siblings_common_full_prefix_blocks": 32,
+            "offered_source_block_occurrences": 132,
+            "unique_offered_source_blocks": 36,
+            "repeated_offered_source_blocks": 96,
+            "producer_cached_tokens": [
+              0,
+              4096,
+              4096,
+              4096
+            ],
+            "remote_block_size_fields": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        },
+        {
+          "group_id": "grpo-06e3de58d06d40f9bfc9e87a9500893e",
+          "successful_requests": 4,
+          "transfers": 4.0,
+          "payload_bytes": 1937768448.0,
+          "payload_MiB": 1848.0,
+          "decode_local_prefix_hit_tokens": 0.0,
+          "d_ttft_median_ms": 81.11768658272922,
+          "e2e_ttft_median_ms": 146.14981249906123,
+          "d_ttft_per_request_ms": [
+            70.00009715557098,
+            69.6810248773545,
+            92.23527600988746,
+            115.04248599521816
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 4,
+            "all_siblings_common_full_prefix_blocks": 32,
+            "offered_source_block_occurrences": 132,
+            "unique_offered_source_blocks": 36,
+            "repeated_offered_source_blocks": 96,
+            "producer_cached_tokens": [
+              0,
+              4096,
+              4096,
+              4096
+            ],
+            "remote_block_size_fields": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        },
+        {
+          "group_id": "grpo-aeaba628e7654747b8f439b83f42fcac",
+          "successful_requests": 4,
+          "transfers": 4.0,
+          "payload_bytes": 1937768448.0,
+          "payload_MiB": 1848.0,
+          "decode_local_prefix_hit_tokens": 0.0,
+          "d_ttft_median_ms": 87.73007290437818,
+          "e2e_ttft_median_ms": 152.3275914369151,
+          "d_ttft_per_request_ms": [
+            63.397085992619395,
+            87.92263292707503,
+            87.53751288168132,
+            109.34257903136313
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 4,
+            "all_siblings_common_full_prefix_blocks": 32,
+            "offered_source_block_occurrences": 132,
+            "unique_offered_source_blocks": 36,
+            "repeated_offered_source_blocks": 96,
+            "producer_cached_tokens": [
+              0,
+              4096,
+              4096,
+              4096
+            ],
+            "remote_block_size_fields": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        },
+        {
+          "group_id": "grpo-a2e00ee512954d5fa7e9274838515cef",
+          "successful_requests": 4,
+          "transfers": 4.0,
+          "payload_bytes": 1937768448.0,
+          "payload_MiB": 1848.0,
+          "decode_local_prefix_hit_tokens": 0.0,
+          "d_ttft_median_ms": 78.38397298473865,
+          "e2e_ttft_median_ms": 144.19837202876806,
+          "d_ttft_per_request_ms": [
+            78.63312494009733,
+            78.13482102937996,
+            77.69686891697347,
+            121.45384913310409
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 4,
+            "all_siblings_common_full_prefix_blocks": 32,
+            "offered_source_block_occurrences": 132,
+            "unique_offered_source_blocks": 36,
+            "repeated_offered_source_blocks": 96,
+            "producer_cached_tokens": [
+              0,
+              4096,
+              4096,
+              4096
+            ],
+            "remote_block_size_fields": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        },
+        {
+          "group_id": "grpo-26572ab41723428eaebfe26c61febce2",
+          "successful_requests": 4,
+          "transfers": 4.0,
+          "payload_bytes": 1937768448.0,
+          "payload_MiB": 1848.0,
+          "decode_local_prefix_hit_tokens": 0.0,
+          "d_ttft_median_ms": 77.64338096603751,
+          "e2e_ttft_median_ms": 140.79297799617052,
+          "d_ttft_per_request_ms": [
+            77.75488495826721,
+            77.53187697380781,
+            77.11248402483761,
+            121.24415300786495
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 4,
+            "all_siblings_common_full_prefix_blocks": 32,
+            "offered_source_block_occurrences": 132,
+            "unique_offered_source_blocks": 36,
+            "repeated_offered_source_blocks": 96,
+            "producer_cached_tokens": [
+              0,
+              4096,
+              4096,
+              4096
+            ],
+            "remote_block_size_fields": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        },
+        {
+          "group_id": "grpo-2884e6e176ab4f60b51e1bfb81e20f31",
+          "successful_requests": 4,
+          "transfers": 4.0,
+          "payload_bytes": 1937768448.0,
+          "payload_MiB": 1848.0,
+          "decode_local_prefix_hit_tokens": 0.0,
+          "d_ttft_median_ms": 75.66473912447691,
+          "e2e_ttft_median_ms": 141.0936820320785,
+          "d_ttft_per_request_ms": [
+            75.82505908794701,
+            75.50441916100681,
+            75.23705903440714,
+            118.9574000891298
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 4,
+            "all_siblings_common_full_prefix_blocks": 32,
+            "offered_source_block_occurrences": 132,
+            "unique_offered_source_blocks": 36,
+            "repeated_offered_source_blocks": 96,
+            "producer_cached_tokens": [
+              0,
+              4096,
+              4096,
+              4096
+            ],
+            "remote_block_size_fields": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        },
+        {
+          "group_id": "grpo-7a0b0abf9e574f76a74ac2adf8b1b4ce",
+          "successful_requests": 4,
+          "transfers": 4.0,
+          "payload_bytes": 1937768448.0,
+          "payload_MiB": 1848.0,
+          "decode_local_prefix_hit_tokens": 0.0,
+          "d_ttft_median_ms": 77.41771603468806,
+          "e2e_ttft_median_ms": 141.99081808328629,
+          "d_ttft_per_request_ms": [
+            77.5498601142317,
+            77.2855719551444,
+            76.89437200315297,
+            121.07423297129571
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 4,
+            "all_siblings_common_full_prefix_blocks": 32,
+            "offered_source_block_occurrences": 132,
+            "unique_offered_source_blocks": 36,
+            "repeated_offered_source_blocks": 96,
+            "producer_cached_tokens": [
+              0,
+              4096,
+              4096,
+              4096
+            ],
+            "remote_block_size_fields": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        },
+        {
+          "group_id": "grpo-22f3f99ddcd94339b490e71f7157eeb0",
+          "successful_requests": 4,
+          "transfers": 4.0,
+          "payload_bytes": 1937768448.0,
+          "payload_MiB": 1848.0,
+          "decode_local_prefix_hit_tokens": 0.0,
+          "d_ttft_median_ms": 76.0709949536249,
+          "e2e_ttft_median_ms": 141.02420990820974,
+          "d_ttft_per_request_ms": [
+            76.23005099594593,
+            75.91193891130388,
+            75.6259229965508,
+            120.20168802700937
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 4,
+            "all_siblings_common_full_prefix_blocks": 32,
+            "offered_source_block_occurrences": 132,
+            "unique_offered_source_blocks": 36,
+            "repeated_offered_source_blocks": 96,
+            "producer_cached_tokens": [
+              0,
+              4096,
+              4096,
+              4096
+            ],
+            "remote_block_size_fields": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        },
+        {
+          "group_id": "grpo-7a174fecde1b4d83a13f3a15b8eac3d2",
+          "successful_requests": 4,
+          "transfers": 4.0,
+          "payload_bytes": 1937768448.0,
+          "payload_MiB": 1848.0,
+          "decode_local_prefix_hit_tokens": 0.0,
+          "d_ttft_median_ms": 77.18315650708973,
+          "e2e_ttft_median_ms": 145.7807404221967,
+          "d_ttft_per_request_ms": [
+            77.29482091963291,
+            77.07149209454656,
+            76.66617981158197,
+            121.00197607651353
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 4,
+            "all_siblings_common_full_prefix_blocks": 32,
+            "offered_source_block_occurrences": 132,
+            "unique_offered_source_blocks": 36,
+            "repeated_offered_source_blocks": 96,
+            "producer_cached_tokens": [
+              0,
+              4096,
+              4096,
+              4096
+            ],
+            "remote_block_size_fields": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        },
+        {
+          "group_id": "grpo-ce8dfa15d5e647f186341c5e9c3fd83b",
+          "successful_requests": 4,
+          "transfers": 4.0,
+          "payload_bytes": 1937768448.0,
+          "payload_MiB": 1848.0,
+          "decode_local_prefix_hit_tokens": 0.0,
+          "d_ttft_median_ms": 86.05476003140211,
+          "e2e_ttft_median_ms": 158.69007410947233,
+          "d_ttft_per_request_ms": [
+            75.21869102492929,
+            74.87926678732038,
+            96.89082903787494,
+            119.02370303869247
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 4,
+            "all_siblings_common_full_prefix_blocks": 32,
+            "offered_source_block_occurrences": 132,
+            "unique_offered_source_blocks": 36,
+            "repeated_offered_source_blocks": 96,
+            "producer_cached_tokens": [
+              0,
+              4096,
+              4096,
+              4096
+            ],
+            "remote_block_size_fields": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        }
+      ]
+    },
+    {
+      "case": "tokens-4097-n-8",
+      "prompt_tokens": 4097,
+      "siblings": 8,
+      "measured_groups": 10,
+      "excluded_warmup_groups": 2,
+      "successful_measured_requests": 80,
+      "transfers_per_group": {
+        "8.0": 10
+      },
+      "decode_local_prefix_hit_tokens_per_group": {
+        "24576.0": 4,
+        "28672.0": 6
+      },
+      "payload_MiB_per_group": {
+        "n": 10,
+        "median": 560.0,
+        "min": 560.0,
+        "max": 1008.0,
+        "values": [
+          1008.0,
+          1008.0,
+          1008.0,
+          560.0,
+          560.0,
+          560.0,
+          560.0,
+          560.0,
+          1008.0,
+          560.0
+        ]
+      },
+      "group_median_d_ttft_ms": {
+        "n": 10,
+        "median": 141.5919540449977,
+        "min": 118.63896693103015,
+        "max": 146.39370050281286,
+        "values": [
+          119.56090398598462,
+          120.83476094994694,
+          118.63896693103015,
+          146.39370050281286,
+          141.91404986195266,
+          141.9999860227108,
+          143.01048300694674,
+          141.35309006087482,
+          120.7299759844318,
+          141.83081802912056
+        ]
+      },
+      "group_median_e2e_ttft_ms": {
+        "n": 10,
+        "median": 213.35465123411268,
+        "min": 188.48914338741452,
+        "max": 219.03430996462703,
+        "values": [
+          190.47119305469096,
+          192.7691939054057,
+          188.48914338741452,
+          219.03430996462703,
+          212.55859488155693,
+          214.1993629047647,
+          217.06437249667943,
+          214.73960403818637,
+          200.58292499743402,
+          214.15070758666843
+        ]
+      },
+      "producer_common_prefix_blocks_per_group": {
+        "32": 10
+      },
+      "unique_destination_blocks": null,
+      "peak_live_destination_blocks": null,
+      "groups": [
+        {
+          "group_id": "grpo-08e6b6a578fa42a39a35e1be2d53cc20",
+          "successful_requests": 8,
+          "transfers": 8.0,
+          "payload_bytes": 1056964608.0,
+          "payload_MiB": 1008.0,
+          "decode_local_prefix_hit_tokens": 24576.0,
+          "d_ttft_median_ms": 119.56090398598462,
+          "e2e_ttft_median_ms": 190.47119305469096,
+          "d_ttft_per_request_ms": [
+            67.70067219622433,
+            120.94255280680954,
+            120.33618404529989,
+            120.11320795863867,
+            119.83077600598335,
+            119.23032789491117,
+            119.2910319659859,
+            119.05464809387922
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 8,
+            "all_siblings_common_full_prefix_blocks": 32,
+            "offered_source_block_occurrences": 264,
+            "unique_offered_source_blocks": 40,
+            "repeated_offered_source_blocks": 224,
+            "producer_cached_tokens": [
+              0,
+              4096,
+              4096,
+              4096,
+              4096,
+              4096,
+              4096,
+              4096
+            ],
+            "remote_block_size_fields": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        },
+        {
+          "group_id": "grpo-eafacb53aeca47d9bd102e3efdc5be6b",
+          "successful_requests": 8,
+          "transfers": 8.0,
+          "payload_bytes": 1056964608.0,
+          "payload_MiB": 1008.0,
+          "decode_local_prefix_hit_tokens": 24576.0,
+          "d_ttft_median_ms": 120.83476094994694,
+          "e2e_ttft_median_ms": 192.7691939054057,
+          "d_ttft_per_request_ms": [
+            69.1401599906385,
+            122.18162510544062,
+            121.9188729301095,
+            121.61288899369538,
+            121.00869696587324,
+            120.56703306734562,
+            120.66082493402064,
+            120.18546392209828
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 8,
+            "all_siblings_common_full_prefix_blocks": 32,
+            "offered_source_block_occurrences": 264,
+            "unique_offered_source_blocks": 40,
+            "repeated_offered_source_blocks": 224,
+            "producer_cached_tokens": [
+              0,
+              4096,
+              4096,
+              4096,
+              4096,
+              4096,
+              4096,
+              4096
+            ],
+            "remote_block_size_fields": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        },
+        {
+          "group_id": "grpo-d54f1974484340189aed948f8c153e2f",
+          "successful_requests": 8,
+          "transfers": 8.0,
+          "payload_bytes": 1056964608.0,
+          "payload_MiB": 1008.0,
+          "decode_local_prefix_hit_tokens": 24576.0,
+          "d_ttft_median_ms": 118.63896693103015,
+          "e2e_ttft_median_ms": 188.48914338741452,
+          "d_ttft_per_request_ms": [
+            66.87919911928475,
+            120.03615195862949,
+            119.40776696428657,
+            119.19266311451793,
+            118.95989486947656,
+            118.31803899258375,
+            118.15778305754066,
+            117.93615110218525
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 8,
+            "all_siblings_common_full_prefix_blocks": 32,
+            "offered_source_block_occurrences": 264,
+            "unique_offered_source_blocks": 40,
+            "repeated_offered_source_blocks": 224,
+            "producer_cached_tokens": [
+              0,
+              4096,
+              4096,
+              4096,
+              4096,
+              4096,
+              4096,
+              4096
+            ],
+            "remote_block_size_fields": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        },
+        {
+          "group_id": "grpo-6dbc55945a9b4f8bb4229d4ebbef6a46",
+          "successful_requests": 8,
+          "transfers": 8.0,
+          "payload_bytes": 587202560.0,
+          "payload_MiB": 560.0,
+          "decode_local_prefix_hit_tokens": 28672.0,
+          "d_ttft_median_ms": 146.39370050281286,
+          "e2e_ttft_median_ms": 219.03430996462703,
+          "d_ttft_per_request_ms": [
+            68.15577601082623,
+            121.58264894969761,
+            121.27084005624056,
+            147.352835861966,
+            147.07533200271428,
+            146.45789191126823,
+            146.60154120065272,
+            146.3295090943575
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 8,
+            "all_siblings_common_full_prefix_blocks": 32,
+            "offered_source_block_occurrences": 264,
+            "unique_offered_source_blocks": 40,
+            "repeated_offered_source_blocks": 224,
+            "producer_cached_tokens": [
+              0,
+              4096,
+              4096,
+              4096,
+              4096,
+              4096,
+              4096,
+              4096
+            ],
+            "remote_block_size_fields": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        },
+        {
+          "group_id": "grpo-b640e2b456504475b6daecfad5c743eb",
+          "successful_requests": 8,
+          "transfers": 8.0,
+          "payload_bytes": 587202560.0,
+          "payload_MiB": 560.0,
+          "decode_local_prefix_hit_tokens": 28672.0,
+          "d_ttft_median_ms": 141.91404986195266,
+          "e2e_ttft_median_ms": 212.55859488155693,
+          "d_ttft_per_request_ms": [
+            67.32140714302659,
+            114.31714100763202,
+            143.20557098835707,
+            142.3299869056791,
+            142.08611380308867,
+            142.12918584235013,
+            141.74198592081666,
+            141.36224193498492
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 8,
+            "all_siblings_common_full_prefix_blocks": 32,
+            "offered_source_block_occurrences": 264,
+            "unique_offered_source_blocks": 40,
+            "repeated_offered_source_blocks": 224,
+            "producer_cached_tokens": [
+              0,
+              4096,
+              4096,
+              4096,
+              4096,
+              4096,
+              4096,
+              4096
+            ],
+            "remote_block_size_fields": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        },
+        {
+          "group_id": "grpo-96dda9e38222457a9e676ce69c846862",
+          "successful_requests": 8,
+          "transfers": 8.0,
+          "payload_bytes": 587202560.0,
+          "payload_MiB": 560.0,
+          "decode_local_prefix_hit_tokens": 28672.0,
+          "d_ttft_median_ms": 141.9999860227108,
+          "e2e_ttft_median_ms": 214.1993629047647,
+          "d_ttft_per_request_ms": [
+            68.72444809414446,
+            117.10178293287754,
+            116.61426210775971,
+            143.31488218158484,
+            142.54745794460177,
+            142.49485009349883,
+            142.10851397365332,
+            141.89145807176828
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 8,
+            "all_siblings_common_full_prefix_blocks": 32,
+            "offered_source_block_occurrences": 264,
+            "unique_offered_source_blocks": 40,
+            "repeated_offered_source_blocks": 224,
+            "producer_cached_tokens": [
+              0,
+              4096,
+              4096,
+              4096,
+              4096,
+              4096,
+              4096,
+              4096
+            ],
+            "remote_block_size_fields": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        },
+        {
+          "group_id": "grpo-ff78783f10e144d38ad5894395cb944c",
+          "successful_requests": 8,
+          "transfers": 8.0,
+          "payload_bytes": 587202560.0,
+          "payload_MiB": 560.0,
+          "decode_local_prefix_hit_tokens": 28672.0,
+          "d_ttft_median_ms": 143.01048300694674,
+          "e2e_ttft_median_ms": 217.06437249667943,
+          "d_ttft_per_request_ms": [
+            67.4552321434021,
+            114.58159005269408,
+            144.20041884295642,
+            143.37475411593914,
+            143.1510099209845,
+            143.1159391067922,
+            142.90502690710127,
+            142.64438697136939
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 8,
+            "all_siblings_common_full_prefix_blocks": 32,
+            "offered_source_block_occurrences": 264,
+            "unique_offered_source_blocks": 40,
+            "repeated_offered_source_blocks": 224,
+            "producer_cached_tokens": [
+              0,
+              4096,
+              4096,
+              4096,
+              4096,
+              4096,
+              4096,
+              4096
+            ],
+            "remote_block_size_fields": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        },
+        {
+          "group_id": "grpo-9303fcc2c8ff4ddcaca98f557415014d",
+          "successful_requests": 8,
+          "transfers": 8.0,
+          "payload_bytes": 587202560.0,
+          "payload_MiB": 560.0,
+          "decode_local_prefix_hit_tokens": 28672.0,
+          "d_ttft_median_ms": 141.35309006087482,
+          "e2e_ttft_median_ms": 214.73960403818637,
+          "d_ttft_per_request_ms": [
+            66.15923112258315,
+            113.7123410589993,
+            142.7536979317665,
+            142.4688019324094,
+            141.63088100031018,
+            141.54736208729446,
+            141.15881803445518,
+            140.95331402495503
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 8,
+            "all_siblings_common_full_prefix_blocks": 32,
+            "offered_source_block_occurrences": 264,
+            "unique_offered_source_blocks": 40,
+            "repeated_offered_source_blocks": 224,
+            "producer_cached_tokens": [
+              0,
+              4096,
+              4096,
+              4096,
+              4096,
+              4096,
+              4096,
+              4096
+            ],
+            "remote_block_size_fields": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        },
+        {
+          "group_id": "grpo-530cc5641b9d45a69af54b699cbef520",
+          "successful_requests": 8,
+          "transfers": 8.0,
+          "payload_bytes": 1056964608.0,
+          "payload_MiB": 1008.0,
+          "decode_local_prefix_hit_tokens": 24576.0,
+          "d_ttft_median_ms": 120.7299759844318,
+          "e2e_ttft_median_ms": 200.58292499743402,
+          "d_ttft_per_request_ms": [
+            69.32025612331927,
+            122.16255301609635,
+            121.58981710672379,
+            121.28549697808921,
+            120.7276398781687,
+            120.7323120906949,
+            120.19036011770368,
+            120.02476002089679
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 8,
+            "all_siblings_common_full_prefix_blocks": 32,
+            "offered_source_block_occurrences": 264,
+            "unique_offered_source_blocks": 40,
+            "repeated_offered_source_blocks": 224,
+            "producer_cached_tokens": [
+              0,
+              4096,
+              4096,
+              4096,
+              4096,
+              4096,
+              4096,
+              4096
+            ],
+            "remote_block_size_fields": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        },
+        {
+          "group_id": "grpo-59c1681787214fcda6e975f7d76a4e6d",
+          "successful_requests": 8,
+          "transfers": 8.0,
+          "payload_bytes": 587202560.0,
+          "payload_MiB": 560.0,
+          "decode_local_prefix_hit_tokens": 28672.0,
+          "d_ttft_median_ms": 141.83081802912056,
+          "e2e_ttft_median_ms": 214.15070758666843,
+          "d_ttft_per_request_ms": [
+            68.00483213737607,
+            116.49045394733548,
+            116.22507800348103,
+            142.7212180569768,
+            142.44838617742062,
+            141.91683405078948,
+            142.0121300034225,
+            141.74480200745165
+          ],
+          "producer_overlap": {
+            "same_producer_endpoint": true,
+            "source_geometry": [
+              [
+                1,
+                1,
+                1
+              ]
+            ],
+            "distinct_producer_requests": 8,
+            "all_siblings_common_full_prefix_blocks": 32,
+            "offered_source_block_occurrences": 264,
+            "unique_offered_source_blocks": 40,
+            "repeated_offered_source_blocks": 224,
+            "producer_cached_tokens": [
+              0,
+              4096,
+              4096,
+              4096,
+              4096,
+              4096,
+              4096,
+              4096
+            ],
+            "remote_block_size_fields": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "note": "Producer metadata, not a trace of completed READs; n=1 overlap is null."
+          }
+        }
+      ]
+    }
+  ]
+}
