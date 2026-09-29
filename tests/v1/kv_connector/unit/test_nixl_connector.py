@@ -495,6 +495,7 @@ def test_kv_transfer_handshake(dist_init):
         # Pull connector advertises its transfer mode in kv_transfer_params so
         # an external router can distinguish it from a push producer.
         assert kv_connector_metadata["transfer_mode"] == "pull"
+        assert kv_connector_metadata["remote_block_size"] == BLOCK_SIZE
 
         # Decode connector will be able to create handshake with the prefill connector.
         decode_connector = NixlConnector(
