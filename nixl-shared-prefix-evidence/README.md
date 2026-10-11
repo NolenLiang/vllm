@@ -1,5 +1,26 @@
 # NIXL shared-prefix baseline and prototype evidence
 
+## Status update — October 11, 2026
+
+This directory preserves the September 29 prototype and baseline evidence.
+Its "remaining work" below describes that historical snapshot. For the
+implementation and subsequent validation, see
+[PR #59343](https://github.com/vllm-project/vllm/pull/59343) and the updated
+[RFC #59141](https://github.com/vllm-project/vllm/issues/59141).
+
+Candidate `e6e362a` subsequently recorded 186 distinct compute-test passes,
+12 real peer-failure trials and an untraced off/on/on/off comparison
+(120 measured groups, 520 D requests, 64 correctness outputs). At four
+siblings, payload fell by 75%; no stable latency improvement is claimed.
+Earlier cancellation/polling/heartbeat probe results remain tied to their
+tested source snapshots; default-progress heartbeat crossing is inconclusive.
+
+Adaptation to parent #57418's October 10 queue/statistics refresh and current
+main is in progress. New-source regression checks, human review/personal
+test execution and upstream CI remain outstanding. The previous dual-GB200
+environment is no longer accessible, so final-source GPU lifecycle validation
+is not claimed. This status note does not modify the archived measurements.
+
 This is a reproducibility attachment for a draft follow-up to
 [#57418](https://github.com/vllm-project/vllm/pull/57418). It is not an upstream
 benchmark suite or a claim that the feature is merge-ready.
