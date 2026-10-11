@@ -5,12 +5,13 @@
 This directory preserves the September 29 prototype and baseline evidence.
 Its original "remaining work" below describes that historical snapshot.
 [PR #59343](https://github.com/vllm-project/vllm/pull/59343) now includes the
-October 10 parent refresh and main at `26a488a`, in candidate `268d488`.
+October 10 parent refresh and main snapshot `fcae5c98`, in rebased candidate `376f6836`.
 
-[October 11 integration validation](refresh-20261011/README.md) records **790
+[October 11 rebase validation](../pr-rebase-evidence/20261011/README.md) records **790
 distinct focused test passes** and all applicable changed-file pre-commit
 hooks, with reproduction commands and sanitized logs. These are current-source
-regression results; they do not replace earlier GPU evidence.
+regression results rerun after rebasing; they do not replace earlier GPU evidence.
+The [earlier integration run](refresh-20261011/README.md) remains archived.
 
 Candidate `e6e362a` previously recorded 186 compute-test passes, 12 real
 peer-failure trials and the repeated untraced comparison (120 groups, 520 D
